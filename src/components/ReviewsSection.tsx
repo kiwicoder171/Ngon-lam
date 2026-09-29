@@ -72,7 +72,7 @@ export const ReviewsSection: React.FC = () => {
                   <Star className="w-3.5 h-3.5 text-gray-300" />
                 </div>
                 <a
-                  href="https://www.wongnai.com/businesses?q=หง่อนหลำ"
+                  href="https://www.wongnai.com/r/278219zl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-[#0050f0] hover:underline flex items-center gap-1"
@@ -274,7 +274,7 @@ export const ReviewsSection: React.FC = () => {
           </a>
 
           <a
-            href="https://www.wongnai.com/businesses?q=หง่อนหลำ"
+            href="https://www.wongnai.com/r/278219zl"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-blue-50/50 text-[#0050f0] font-bold text-xs sm:text-sm border border-[#0050f0]/30 shadow-sm hover:shadow-md transition-all"
