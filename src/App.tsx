@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -14,6 +14,14 @@ import { DeliveryModal } from './components/DeliveryModal';
 const MainContent: React.FC = () => {
   const [reservationOpen, setReservationOpen] = useState(false);
   const [deliveryOpen, setDeliveryOpen] = useState(false);
+
+  useEffect(() => {
+    // Reset scroll to top on fresh load/reload
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
 
   const handleOpenReservation = () => setReservationOpen(true);
   const handleOpenDelivery = () => setDeliveryOpen(true);

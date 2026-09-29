@@ -9,6 +9,14 @@ export const Footer: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const scrollToSection = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-[#1b4332] text-[#f4eee6] pt-16 pb-28 md:pb-16 border-t border-[#2d6a4f]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,22 +85,22 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-sm text-emerald-100/80">
               <li>
-                <a href="#menu" className="hover:text-white transition-colors">
+                <a href="#menu" onClick={(e) => scrollToSection(e, 'menu')} className="hover:text-white transition-colors">
                   {t('nav.menu')}
                 </a>
               </li>
               <li>
-                <a href="#story" className="hover:text-white transition-colors">
+                <a href="#story" onClick={(e) => scrollToSection(e, 'story')} className="hover:text-white transition-colors">
                   {t('nav.story')}
                 </a>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-white transition-colors">
+                <a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')} className="hover:text-white transition-colors">
                   {t('nav.reviews')}
                 </a>
               </li>
               <li>
-                <a href="#location" className="hover:text-white transition-colors">
+                <a href="#location" onClick={(e) => scrollToSection(e, 'location')} className="hover:text-white transition-colors">
                   {t('nav.location')}
                 </a>
               </li>

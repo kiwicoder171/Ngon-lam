@@ -14,6 +14,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const status = getRestaurantStatus();
 
+  const scrollToSection = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -45,6 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
           <div className="flex items-center gap-4">
             <a 
               href="#location" 
+              onClick={(e) => scrollToSection(e, 'location')}
               className="hover:text-emerald-200 flex items-center gap-1 transition-colors text-[11px] sm:text-xs"
             >
               <MapPin className="w-3 h-3 text-emerald-300 shrink-0" />
@@ -81,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo & Heritage badge */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="#" onClick={scrollToTop} className="flex items-center gap-3 group">
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#1b4332] to-[#2d6a4f] flex items-center justify-center text-white shadow-md shadow-emerald-950/20 group-hover:scale-105 transition-transform">
               <Utensils className="w-5 h-5 sm:w-6 sm:h-6 text-[#e9c46a]" />
             </div>
@@ -102,16 +118,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-7 text-[#403d39] font-medium text-sm">
-            <a href="#menu" className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
+            <a href="#menu" onClick={(e) => scrollToSection(e, 'menu')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.menu')}
             </a>
-            <a href="#story" className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
+            <a href="#story" onClick={(e) => scrollToSection(e, 'story')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.story')}
             </a>
-            <a href="#reviews" className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
+            <a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.reviews')}
             </a>
-            <a href="#location" className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
+            <a href="#location" onClick={(e) => scrollToSection(e, 'location')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.location')}
             </a>
           </nav>
@@ -151,28 +167,28 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
             <div className="flex flex-col gap-3 py-2 text-base font-semibold text-[#403d39]">
               <a
                 href="#menu"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, 'menu')}
                 className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
               >
                 {t('nav.menu')}
               </a>
               <a
                 href="#story"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, 'story')}
                 className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
               >
                 {t('nav.story')}
               </a>
               <a
                 href="#reviews"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, 'reviews')}
                 className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
               >
                 {t('nav.reviews')}
               </a>
               <a
                 href="#location"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => scrollToSection(e, 'location')}
                 className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
               >
                 {t('nav.location')}
