@@ -163,15 +163,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
 
                 {/* Bottom dish label */}
-                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 max-w-[44%] sm:max-w-[48%] text-white pointer-events-none z-0">
+                <div className="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 max-w-[38%] sm:max-w-[42%] text-white pointer-events-none z-0">
                   <div className="inline-block px-2 py-0.5 bg-[#e9c46a] text-black text-[10px] font-bold rounded uppercase tracking-wider mb-1 shadow-xs">
                     Signature Highlight
                   </div>
-                  <h3 className="text-sm sm:text-base font-bold leading-tight drop-shadow-md">
-                    {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนือง' : 'Signature Beef Phở & Nem Nướng'}
+                  <h3 className="text-xs sm:text-base font-bold leading-tight drop-shadow-md">
+                    {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนือง' : 'Beef Phở & Nem Nướng'}
                   </h3>
-                  <p className="text-[11px] text-white/90 drop-shadow-sm mt-0.5 line-clamp-2">
-                    {language === 'th' ? 'ซุปเคี่ยว 12 ชม. ผักสดไม่อั้น' : '12-hr simmered broth & fresh herbs'}
+                  <p className="text-[10px] sm:text-[11px] text-white/90 drop-shadow-sm mt-0.5 line-clamp-1 sm:line-clamp-2">
+                    {language === 'th' ? 'ซุปเคี่ยว 12 ชม. ผักสดไม่อั้น' : '12-hr simmered broth'}
                   </p>
                 </div>
               </div>
@@ -247,7 +247,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     </div>
                   </div>
                   <div className="text-[11px] font-semibold text-gray-600 mt-0.5">
-                    {language === 'th' ? 'Google & Wongnai (400+ รีวิว)' : 'Google & Wongnai (400+ Reviews)'}
+                    {t('hero.statReviews')}
                   </div>
                 </div>
               </div>
