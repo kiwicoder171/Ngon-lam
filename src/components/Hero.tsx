@@ -145,7 +145,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
           </div>
 
           {/* Right Column: High-Impact Visual Dish Presentation */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative pb-6 sm:pb-0">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Main Dish Imagery Container with decorative frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 aspect-[4/3] sm:aspect-square bg-[#2c221e]/5">
@@ -163,15 +163,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
 
                 {/* Bottom dish label */}
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="inline-block px-2.5 py-0.5 bg-[#e9c46a] text-black text-[11px] font-bold rounded-md uppercase tracking-wider mb-1">
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 max-w-[44%] sm:max-w-[48%] text-white pointer-events-none z-0">
+                  <div className="inline-block px-2 py-0.5 bg-[#e9c46a] text-black text-[10px] font-bold rounded uppercase tracking-wider mb-1 shadow-xs">
                     Signature Highlight
                   </div>
-                  <h3 className="text-lg font-bold leading-tight drop-shadow-md">
-                    {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนืองสูตรลับ' : 'Signature Beef Phở & Nem Nướng Platter'}
+                  <h3 className="text-sm sm:text-base font-bold leading-tight drop-shadow-md">
+                    {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนือง' : 'Signature Beef Phở & Nem Nướng'}
                   </h3>
-                  <p className="text-xs text-white/90 drop-shadow-sm">
-                    {language === 'th' ? 'ซุปเคี่ยวข้ามคืนกว่า 12 ชั่วโมง เสิร์ฟพร้อมผักสดไม่อั้น' : '12-hour simmered bone broth & fresh herb platter'}
+                  <p className="text-[11px] text-white/90 drop-shadow-sm mt-0.5 line-clamp-2">
+                    {language === 'th' ? 'ซุปเคี่ยว 12 ชม. ผักสดไม่อั้น' : '12-hr simmered broth & fresh herbs'}
                   </p>
                 </div>
               </div>
@@ -192,13 +192,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               </div>
 
               {/* Floating Review Card 2: Bottom Right */}
-              <div className="absolute bottom-2 right-2 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2.5 sm:gap-3">
-                <div className="flex -space-x-1.5 overflow-hidden">
+              <div 
+                onClick={() => {
+                  document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="absolute -bottom-3 right-1.5 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-md px-2.5 py-1.5 sm:px-3.5 sm:py-2.5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2 sm:gap-2.5 z-10 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all"
+                title={language === 'th' ? 'ดูรีวิวทั้งหมดบน Google และ Wongnai' : 'View all Google & Wongnai Reviews'}
+              >
+                <div className="flex -space-x-1.5 overflow-hidden shrink-0">
                   <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-white shadow-xs"
+                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-white shadow-xs"
                     title="Google Reviews"
                   >
-                    <svg className="w-4 h-4" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24">
                       <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
                       <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
                       <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.99 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
@@ -206,26 +212,42 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     </svg>
                   </div>
                   <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-[#0050f0] text-white shadow-xs font-black text-xs"
+                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#0050f0] text-white shadow-xs font-black text-xs"
                     title="Wongnai Reviews"
                   >
                     W
                   </div>
                   <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-[#1b4332] text-[#e9c46a] shadow-xs font-bold text-xs"
+                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#1b4332] text-[#e9c46a] shadow-xs font-bold text-xs"
                     title="Verified Diners"
                   >
                     ★
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                    ))}
+                  <div className="flex items-center gap-1.5">
+                    {/* Accurate 4.2 Fractional Star Rating (4 full + 1 at 20%) */}
+                    <div className="flex items-center gap-0.5">
+                      {[1, 2, 3, 4, 5].map((starIndex) => (
+                        <div key={starIndex} className="relative w-3.5 h-3.5 shrink-0">
+                          <Star className="w-3.5 h-3.5 text-gray-200 fill-gray-200" />
+                          <div 
+                            className="absolute inset-0 overflow-hidden" 
+                            style={{ width: starIndex <= 4 ? '100%' : '20%' }}
+                          >
+                            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="text-xs font-extrabold text-[#1b4332] leading-none flex items-center gap-0.5">
+                      <span>4.2★</span>
+                      <span className="text-gray-300 font-normal">·</span>
+                      <span className="text-[#0050f0]">4.0★</span>
+                    </div>
                   </div>
-                  <div className="text-[11px] font-semibold text-[#1b4332] mt-0.5">
-                    {language === 'th' ? '4.2 ดาว (350+ รีวิว)' : '4.2 Stars (350+ Reviews)'}
+                  <div className="text-[11px] font-semibold text-gray-600 mt-0.5">
+                    {language === 'th' ? 'Google & Wongnai (400+ รีวิว)' : 'Google & Wongnai (400+ Reviews)'}
                   </div>
                 </div>
               </div>
