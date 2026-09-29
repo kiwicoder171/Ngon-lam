@@ -105,7 +105,7 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
               {/* Action Buttons */}
               <div className="pt-5 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+งอนหลำ+จุฬา+ซอย+9"
+                  href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+หง่อนหลำ+จุฬา+ซอย+9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#1b4332] hover:bg-[#081c15] text-white font-bold text-sm shadow-md transition-all"
@@ -172,7 +172,7 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#1b4332]">
-                    {language === 'th' ? 'งอนหลำ จุฬา ซอย 9' : 'Ngon Lam Chula 9'}
+                    {language === 'th' ? 'หง่อนหลำ จุฬา ซอย 9' : 'Ngon Lam Chula 9'}
                   </div>
                   <div className="text-[10px] text-gray-500">
                     {language === 'th' ? 'ใกล้สามย่านมิตรทาวน์' : 'Near Samyan Mitrtown'}

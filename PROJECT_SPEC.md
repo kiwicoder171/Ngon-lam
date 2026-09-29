@@ -1,7 +1,7 @@
-# PROJECT_SPEC: Ngon Lam (งอนหลำ) High-Converting Restaurant Landing Page
+# PROJECT_SPEC: Ngon Lam (หง่อนหลำ) High-Converting Restaurant Landing Page
 
 ## 1. Project Overview & Objective
-* **Client / Subject:** Ngon Lam (ร้านอาหารเวียดนาม งอนหลำ จุฬา ซอย 9)
+* **Client / Subject:** Ngon Lam (ร้านอาหารเวียดนาม หง่อนหลำ จุฬา ซอย 9)
   * Facebook: https://www.facebook.com/ngonlamchula9
   * Location: Chula Soi 9 (Google Maps 4+ Stars, 350+ reviews, ~30 years established)
 * **Goal:** High-converting, mobile-first bilingual landing page acting as a flagship portfolio piece for freelance web development services on Fastwork (targeting Standard/Premium tiers).
