@@ -63,10 +63,15 @@
   "reviews": {
     "sectionBadge": "REAL REVIEWS",
     "title": "Loved by Locals, Expats & Foodies",
-    "subtitle": "4.2 Star average rating on Google Maps across 350+ genuine customer reviews",
-    "googleVerified": "Verified Google Maps Reviews",
+    "subtitle": "Highly rated across Google Maps and Wongnai — Thailand's premier restaurant review platform",
+    "googleVerified": "Google Maps (350+ Reviews)",
+    "wongnaiVerified": "Wongnai (Top Vietnamese Landmark)",
     "viewAllGoogle": "Read All Reviews on Google Maps",
-    "filterAll": "All Reviews",
+    "viewAllWongnai": "Read Reviews on Wongnai",
+    "platformAll": "All Platforms",
+    "platformGoogle": "Google Maps (4.2★)",
+    "platformWongnai": "Wongnai (4.0★)",
+    "filterAll": "All Dishes",
     "filterPho": "Phở & Broth Fans",
     "filterNem": "Nem Nướng & Platters",
     "filterVibe": "Atmosphere & Service"

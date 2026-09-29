@@ -22,6 +22,7 @@ export interface Dish {
 
 export interface Review {
   id: string;
+  source: 'google' | 'wongnai';
   author: string;
   authorTypeTh: string;
   authorTypeEn: string;
@@ -162,6 +163,7 @@ export const DISHES: Dish[] = [
 export const REVIEWS: Review[] = [
   {
     id: 'rev-1',
+    source: 'google',
     author: 'Thanaporn W.',
     authorTypeTh: 'Google Local Guide (ระดับ 7)',
     authorTypeEn: 'Google Local Guide (Level 7)',
@@ -177,6 +179,7 @@ export const REVIEWS: Review[] = [
   },
   {
     id: 'rev-2',
+    source: 'google',
     author: 'David L.',
     authorTypeTh: 'Google Reviewer (Expat in Bangkok)',
     authorTypeEn: 'Google Reviewer (Expat in Bangkok)',
@@ -191,7 +194,24 @@ export const REVIEWS: Review[] = [
     dishRecommendedEn: 'Betel Leaf Pork & Special Beef Phở'
   },
   {
+    id: 'rev-wongnai-1',
+    source: 'wongnai',
+    author: 'Ploy P. (Wongnai Elite)',
+    authorTypeTh: 'Wongnai Elite • Top Reviewer',
+    authorTypeEn: 'Wongnai Elite • Top Reviewer',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: 'สัปดาห์ก่อน',
+    dateEn: '1 week ago',
+    category: 'nem',
+    textTh: 'ร้านอาหารเวียดนามเก่าแก่ย่านสะพานเหลือง ย้ายมาที่จุฬา ซอย 9 ร้านกว้างขวางขึ้น สะอาดสะอ้าน เมนูประจำที่ต้องสั่งคือ แหนมเนืองชุดใหญ่ หมูย่างหอมเตาถ่าน น้ำจิ้มสูตรตับบดงาคั่วโบราณเข้มข้นเป็นเอกลักษณ์ ข้าวเกรียบปากหม้อนุ่มลื่น กุ้งพันอ้อยชิ้นโต ให้ผักสดแบบจัดเต็มไม่มีกั๊ก ทานกี่ครั้งก็รักษามาตรฐานได้ดีมาก',
+    textEn: 'A classic Vietnamese institution from Saphan Lueang, now at Chula Soi 9 with a spacious, clean dining hall. Must-order: Grand Nem Nướng set with smoky charcoal-grilled pork and their signature roasted liver & sesame dipping sauce. Bánh Cuốn is silky smooth, and sugarcane shrimp is plump and juicy. Fresh herbs are bountiful and crisp!',
+    dishRecommendedTh: 'แหนมเนือง & กุ้งพันอ้อย',
+    dishRecommendedEn: 'Nem Nướng & Sugarcane Shrimp'
+  },
+  {
     id: 'rev-3',
+    source: 'google',
     author: 'คุณพิมพรรณ รัตนศิริ',
     authorTypeTh: 'Google Local Guide (ครอบครัวสามย่าน)',
     authorTypeEn: 'Google Local Guide (Family Diner)',
@@ -206,7 +226,24 @@ export const REVIEWS: Review[] = [
     dishRecommendedEn: 'Bánh Cuốn & Crispy Spring Rolls'
   },
   {
+    id: 'rev-wongnai-2',
+    source: 'wongnai',
+    author: 'Nutthawut K.',
+    authorTypeTh: 'Wongnai Top 1% Eater',
+    authorTypeEn: 'Wongnai Top 1% Eater',
+    avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: '2 สัปดาห์ก่อน',
+    dateEn: '2 weeks ago',
+    category: 'pho',
+    textTh: 'ร้านประจำสมัยเรียนจุฬาฯ วันนี้กลับมาทานรสชาติยังอร่อยเหมือนเดิมไม่มีเปลี่ยน เฝอน้ำซุปใสรสกลมกล่อม ซดคล่องคอมาก หมูย่างใบชะพลูหอมกลิ่นย่างถ่านเตะจมูก ทานกับเส้นหมี่และน้ำจิ้มหวานเปรี้ยวเข้ากันสุดๆ อาหารออกเร็วมาก ราคาเป็นมิตรกับกระเป๋าเงิน',
+    textEn: 'My favorite spot during my university years at Chula. Came back today and the flavors are still just as wonderful. The clear phở broth is deeply soothing and comforting. Charcoal grilled pork wrapped in betel leaves is exceptionally aromatic. Speedy service and very reasonable prices.',
+    dishRecommendedTh: 'เฝอน้ำซุปใส & หมูย่างใบชะพลู',
+    dishRecommendedEn: 'Clear Phở & Betel Leaf Pork'
+  },
+  {
     id: 'rev-4',
+    source: 'google',
     author: 'คุณอนุชา เกียรติสกุล',
     authorTypeTh: 'ลูกค้าประจำย่านพระราม 4 - สามย่าน',
     authorTypeEn: 'Rama 4 - Samyan Resident',
@@ -219,6 +256,22 @@ export const REVIEWS: Review[] = [
     textEn: 'Our family staple restaurant for healthy, vegetable-rich meals. Huge variety with over 70 menu choices, and the combo sets offer fantastic value and portion sizes. Consistently delicious for over 20 years. Very convenient 5-min walk from MRT Samyan.',
     dishRecommendedTh: 'เซตแหนมเนือง & กุ้งพันอ้อย',
     dishRecommendedEn: 'Nem Nướng Set & Sugarcane Shrimp'
+  },
+  {
+    id: 'rev-wongnai-3',
+    source: 'wongnai',
+    author: 'Chula Food Guide',
+    authorTypeTh: 'Wongnai Community Reviewer',
+    authorTypeEn: 'Wongnai Community Reviewer',
+    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: '3 สัปดาห์ก่อน',
+    dateEn: '3 weeks ago',
+    category: 'vibe',
+    textTh: 'ร้านติดแอร์นั่งสบาย เหมาะกับพาเพื่อนหรือครอบครัวมาเลี้ยงสังสรรค์ เมนูมีให้เลือกเยอะกว่า 70 เมนู ชอบที่ผักสดล้างมาสะอาดมาก น้ำจิ้มขอเพิ่มได้ตลอด ใครชอบอาหารสุขภาพแนะนำเลยครับ เดินจาก MRT สามย่าน ประตู 2 แค่ 5 นาที',
+    textEn: 'Comfortable air-conditioned space perfect for gathering with friends or family. Massive menu with over 70 authentic choices. The fresh vegetables are meticulously washed and unlimited. Highly recommended for healthy dining, only 5 mins walk from MRT Samyan Exit 2.',
+    dishRecommendedTh: 'ยำไหลบัวกุ้งสด & แหนมเนือง',
+    dishRecommendedEn: 'Lotus Stem Salad & Nem Nướng'
   }
 ];
 

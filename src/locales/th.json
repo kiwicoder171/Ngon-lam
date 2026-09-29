@@ -63,10 +63,15 @@
   "reviews": {
     "sectionBadge": "REAL REVIEWS",
     "title": "ความประทับใจจากลูกค้าตัวจริง",
-    "subtitle": "คะแนนเฉลี่ย 4.2 ดาวบน Google Maps จากผู้มาเยือนกว่า 350+ รีวิว",
-    "googleVerified": "รีวิวที่ได้รับการยืนยันจาก Google Maps",
+    "subtitle": "การันตีความอร่อยจาก Google Maps และ Wongnai แพลตฟอร์มรีวิวอันดับ 1 ของคนไทย",
+    "googleVerified": "Google Maps (350+ รีวิว)",
+    "wongnaiVerified": "Wongnai (ร้านอาหารเวียดนามยอดนิยม)",
     "viewAllGoogle": "ดูรีวิวทั้งหมดบน Google Maps",
-    "filterAll": "รีวิวทั้งหมด",
+    "viewAllWongnai": "ดูรีวิวทั้งหมดบน Wongnai",
+    "platformAll": "ทุกแพลตฟอร์ม",
+    "platformGoogle": "Google Maps (4.2★)",
+    "platformWongnai": "Wongnai (4.0★)",
+    "filterAll": "ทุกเมนู",
     "filterPho": "คนรักเฝอ & ซุป",
     "filterNem": "แหนมเนือง & ผักสด",
     "filterVibe": "บริการ & บรรยากาศ"
