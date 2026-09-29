@@ -47,7 +47,7 @@ export const HeritageStory: React.FC = () => {
                 <Award className="w-6 h-6 mb-1 text-[#e9c46a]" />
                 <span className="text-xl font-black leading-none">25+</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-emerald-200 mt-1">
-                  {language === 'th' ? 'ปีแห่งตำนาน' : 'Years'}
+                  {language === 'th' ? 'ปีแห่งความอร่อย' : 'Years'}
                 </span>
               </div>
             </div>
