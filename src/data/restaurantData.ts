@@ -509,3 +509,92 @@ export const getRestaurantStatus = (): RestaurantStatus => {
     };
   }
 };
+
+export interface MediaVideo {
+  id: string;
+  youtubeId: string;
+  url: string;
+  badgeTh: string;
+  badgeEn: string;
+  titleTh: string;
+  titleEn: string;
+  channelName: string;
+  descriptionTh: string;
+  descriptionEn: string;
+}
+
+export const MEDIA_VIDEOS: MediaVideo[] = [
+  {
+    id: 'tv-1',
+    youtubeId: 'DTx-NlhCLg4',
+    url: 'https://youtu.be/DTx-NlhCLg4?si=Zb09rDsKT9_hogLy',
+    badgeTh: 'รายการโทรทัศน์',
+    badgeEn: 'TV Broadcast',
+    titleTh: 'ร้านอาหารเวียดนาม หง่อนหลำ ออกอากาศ 20 พ.ค. 2563',
+    titleEn: 'Ngon Lam Vietnamese Restaurant — TV Feature',
+    channelName: 'รายการไปกินไปเที่ยว (News Talk Ten)',
+    descriptionTh: 'รายการพาชมบรรยากาศในร้าน สัมภาษณ์ความเป็นมาของอาหารเวียดนามสูตรดั้งเดิม และเคล็ดลับการเคี่ยวน้ำซุปเฝอ 12 ชั่วโมง',
+    descriptionEn: 'Full television walkthrough exploring the history of Ngon Lam and the secrets behind their 12-hour simmered Phở broth.',
+  },
+  {
+    id: 'tv-2',
+    youtubeId: 'Q8sKLJrwxMM',
+    url: 'https://youtu.be/Q8sKLJrwxMM?si=VR48risFeSkgyCTM',
+    badgeTh: 'อร่อยเลิศกับคุณหรีด',
+    badgeEn: 'Reedicious TV Show',
+    titleTh: 'หง่อนหลำ ปากซอยจุฬา 9 | อร่อยเลิศกับคุณหรีด',
+    titleEn: 'Ngon Lam Chula 9 | Reedicious Culinary Special',
+    channelName: 'อร่อยเลิศกับคุณหรีด (Reedicious)',
+    descriptionTh: 'คุณหรีดพาชิมเมนูเด็ดประจำร้าน การันตีความสดอร่อยของแหนมเนืองน้ำจิ้มตับบด ข้าวเกรียบปากหม้อ และขนมเบื้องญวน',
+    descriptionEn: 'Khun Reed features Ngon Lam\'s top signature items, highlighting the warm liver-sesame dip, Bánh Cuốn, and crispy Bánh Xèo.',
+  },
+  {
+    id: 'tv-3',
+    youtubeId: '28ym4gUdaWM',
+    url: 'https://youtu.be/28ym4gUdaWM?si=MMr0xwDgPrT1ArbC',
+    badgeTh: 'รายการพาชิม',
+    badgeEn: 'Food Explorer',
+    titleTh: 'เอกพากิน!! อาหารเวียดนาม ร้านหง่อนหลำ ซ.จุฬา 9',
+    titleEn: 'Eak Pa-Kin!! Ngon Lam Vietnamese Restaurant Chula Soi 9',
+    channelName: 'เอกพากิน (supojdesu)',
+    descriptionTh: 'รีวิวจัดเต็มทั้งโต๊ะ ชิมเปาะเปี๊ยะทอดกรอบ กุ้งพันอ้อย และน้ำซุปเฝอสูตรฮานอย อร่อยคุ้มค่าราคาสบายกระเป๋า',
+    descriptionEn: 'An in-depth feast review trying crispy spring rolls, sugarcane shrimp, and Hanoi-style beef phở.',
+  },
+  {
+    id: 'tv-4',
+    youtubeId: 't66LyZmQon8',
+    url: 'https://youtu.be/t66LyZmQon8?si=WmlJCQrizB-y2cHY',
+    badgeTh: 'คนดังชวนชิม',
+    badgeEn: 'Celebrity Pick',
+    titleTh: '🙏 อาหารเวียดนามหง่อนหลำเปิดมายาวนาน การันตีความอร่อย',
+    titleEn: 'Ngon Lam Legendary Vietnamese Food — Taste Guaranteed',
+    channelName: 'ไชยา มิตรชัย แฟนคลับ (Chaiya Mitchai FC)',
+    descriptionTh: 'คุณเอ ไชยา มิตรชัย ศิลปินและพิธีกรชื่อดัง แนะนำร้านหง่อนหลำ จุฬา ซอย 9 ร้านอาหารเวียดนามรสชาติกลมกล่อม',
+    descriptionEn: 'Beloved Thai host and celebrity Chaiya Mitchai recommends Ngon Lam as a must-visit Vietnamese gem in Chula Soi 9.',
+  },
+  {
+    id: 'tv-5',
+    youtubeId: '6dgtTo1P-jk',
+    url: 'https://youtu.be/6dgtTo1P-jk?si=54taSlnmI2uaZaZO',
+    badgeTh: 'รีวิวภาษาอังกฤษ (ENG SUB)',
+    badgeEn: 'Food & Travel Guide',
+    titleTh: '[ENG SUB]: NGON-LAM VIETNAMESE RESTAURANT | ร้านอาหารเวียดนามเจ้าเก่าแก่ ย่านสามย่าน',
+    titleEn: '[ENG SUB]: Ngon-Lam Vietnamese Restaurant | Samyan Heritage Spot',
+    channelName: 'Wherever We Go',
+    descriptionTh: 'คลิปรีวิวพร้อมคำบรรยายภาษาอังกฤษ แนะนำเมนูห้ามพลาดสำหรับทั้งคนไทยและชาวต่างชาติที่มาเยือนจุฬาฯ-สามย่าน',
+    descriptionEn: 'Detailed English-subtitled food tour showcasing top recommendations for tourists and international foodies visiting Samyan.',
+  },
+  {
+    id: 'tv-6',
+    youtubeId: 'kjI02t6Yasw',
+    url: 'https://youtu.be/kjI02t6Yasw?si=aT1-zgIEkqB99UTS',
+    badgeTh: 'ไลฟ์สไตล์พาชิม',
+    badgeEn: 'Lifestyle Review',
+    titleTh: 'EP56 หง่อนหลำ จุฬา ซอย 9 อาหารเวียดนามรสเด็ด',
+    titleEn: 'EP56 Ngon Lam Chula Soi 9 — Authentic Vietnamese Feast',
+    channelName: 'ไอ แอม แหม่ม (I am Maem)',
+    descriptionTh: 'พาไปลิ้มลองเมนูเพื่อสุขภาพ ผักสดเติมไม่อั้น แหนมเนือง หมูย่างใบชะพลู และบรรยากาศร้านห้องแอร์นั่งสบาย',
+    descriptionEn: 'A cozy food journey discovering healthy vegetable spreads, betel leaf pork, and the relaxed dining ambiance.',
+  },
+];
+

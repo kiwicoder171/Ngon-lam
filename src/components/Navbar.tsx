@@ -124,6 +124,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
             <a href="#story" onClick={(e) => scrollToSection(e, 'story')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.story')}
             </a>
+            <a href="#media" onClick={(e) => scrollToSection(e, 'media')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
+              {t('nav.media')}
+            </a>
             <a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')} className="hover:text-[#1b4332] transition-colors py-1 relative hover:font-semibold">
               {t('nav.reviews')}
             </a>
@@ -178,6 +181,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
                 className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
               >
                 {t('nav.story')}
+              </a>
+              <a
+                href="#media"
+                onClick={(e) => scrollToSection(e, 'media')}
+                className="px-3 py-2 rounded-lg hover:bg-[#e9e3da]/40 hover:text-[#1b4332]"
+              >
+                {t('nav.media')}
               </a>
               <a
                 href="#reviews"

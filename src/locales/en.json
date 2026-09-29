@@ -9,6 +9,7 @@
   "nav": {
     "menu": "Signature Dishes",
     "story": "Heritage Story",
+    "media": "TV & Media",
     "reviews": "Reviews",
     "location": "Location & Hours",
     "dineInCta": "Reserve Table",
@@ -60,6 +61,16 @@
     "stat3Label": "Farm-fresh daily herbs & vegetables",
     "stat4": "350+",
     "stat4Label": "Google verified 4+ star reviews"
+  },
+  "media": {
+    "sectionBadge": "AS SEEN ON TV & MEDIA",
+    "title": "Featured on Leading TV Shows & Culinary Media",
+    "subtitle": "Discover Ngon Lam's authentic heritage through televised food programs, host tastings, and culinary documentaries.",
+    "watchVideo": "Watch Episode",
+    "watchOnYoutube": "Watch on YouTube",
+    "close": "Close",
+    "channelLabel": "Publisher",
+    "featuredNotice": "Click any preview card to watch the video episode instantly"
   },
   "reviews": {
     "sectionBadge": "REAL REVIEWS",

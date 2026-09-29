@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { SignatureMenu } from './components/SignatureMenu';
 import { HeritageStory } from './components/HeritageStory';
+import { MediaShowcase } from './components/MediaShowcase';
 import { ReviewsSection } from './components/ReviewsSection';
 import { LocationHours } from './components/LocationHours';
 import { Footer } from './components/Footer';
@@ -45,6 +46,7 @@ const MainContent: React.FC = () => {
           onOpenDelivery={handleOpenDelivery}
         />
         <HeritageStory />
+        <MediaShowcase />
         <ReviewsSection />
         <LocationHours
           onOpenReservation={handleOpenReservation}
