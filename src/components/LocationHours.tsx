@@ -135,7 +135,7 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
                     {language === 'th' ? 'ไม่อยากเดินทาง? สั่ง Delivery เลย' : "Can't Visit? Order Delivery Direct"}
                   </h4>
                   <p className="text-xs text-emerald-200/80 mt-0.5">
-                    GrabFood & LINE MAN
+                    LINE MAN & Robinhood
                   </p>
                 </div>
               </div>

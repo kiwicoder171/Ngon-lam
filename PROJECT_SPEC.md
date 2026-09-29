@@ -7,7 +7,7 @@
 * **Goal:** High-converting, mobile-first bilingual landing page acting as a flagship portfolio piece for freelance web development services on Fastwork (targeting Standard/Premium tiers).
 * **Core Conversion Funnel:** 
   1. Primary: Drive In-Restaurant Dining (Phone Call reservation + Google Maps Walk-in).
-  2. Secondary: Direct Delivery orders (GrabFood & LINE MAN integration).
+  2. Secondary: Direct Delivery orders (LINE MAN & Robinhood integration).
   3. Support / Inquiries: Facebook Messenger & LINE OA.
 
 ---
@@ -64,7 +64,7 @@
 ### G. Sticky Mobile Conversion Bar (Bottom Dock)
 To prevent decision paralysis on mobile devices:
 * **Left Button (60% width):** `📞 โทรจองโต๊ะ / จองผ่านไลน์` (Opens contact tray with Phone, LINE, Facebook).
-* **Right Button (40% width):** `🛵 สั่ง Delivery` (Quick modal with direct links to GrabFood & LINE MAN).
+* **Right Button (40% width):** `🛵 สั่ง Delivery` (Quick modal with direct links to LINE MAN & Robinhood).
 
 ---
 

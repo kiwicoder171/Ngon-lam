@@ -93,7 +93,7 @@
     "callNow": "โทรติดต่อร้านทันที",
     "transitMRT": "MRT สามย่าน ทางออก 2 (เดินประมาณ 450 เมตร)",
     "transitParking": "มีที่จอดรถบริเวณสวนหลวงสแควร์ และอาคารจอดรถจุฬาฯ",
-    "deliveryDirect": "สั่งเดลิเวอรีทาง GrabFood และ LINE MAN ได้ตลอดเวลาเปิดทำการ"
+    "deliveryDirect": "สั่งเดลิเวอรีทาง LINE MAN และ Robinhood ได้ตลอดเวลาเปิดทำการ"
   },
   "modalReservation": {
     "title": "จองโต๊ะ & สอบถามข้อมูล",
@@ -114,9 +114,9 @@
   "modalDelivery": {
     "title": "สั่งเดลิเวอรีส่งตรงถึงบ้านคุณ",
     "subtitle": "เพลิดเพลินกับรสชาติอาหารเวียดนามแท้ อร่อย สดใหม่ เหมือนทานที่ร้าน",
-    "grabTitle": "GrabFood",
-    "grabDesc": "จัดส่งรวดเร็ว มีโปรโมชั่นส่วนลดค่าส่งและเซ็ตสุดคุ้ม",
-    "grabBtn": "สั่งผ่าน GrabFood",
+    "robinhoodTitle": "Robinhood",
+    "robinhoodDesc": "แอปส่งอาหารเพื่อคนไทย ค่าส่งเป็นมิตร จัดส่งรวดเร็วถึงบ้าน",
+    "robinhoodBtn": "สั่งผ่าน Robinhood",
     "lineManTitle": "LINE MAN",
     "lineManDesc": "ครอบคลุมพื้นที่จัดส่งทั่วกรุงเทพฯ เมนูครบเหมือนหน้าร้าน",
     "lineManBtn": "สั่งผ่าน LINE MAN",

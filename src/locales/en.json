@@ -93,7 +93,7 @@
     "callNow": "Call Restaurant",
     "transitMRT": "MRT Samyan Exit 2 (approx. 450 meters walk)",
     "transitParking": "Parking available at Suanluang Square and Chulalongkorn Car Park",
-    "deliveryDirect": "Delivery available daily on GrabFood and LINE MAN during store hours"
+    "deliveryDirect": "Delivery available daily on LINE MAN and Robinhood during store hours"
   },
   "modalReservation": {
     "title": "Reserve Table & Inquiries",
@@ -114,9 +114,9 @@
   "modalDelivery": {
     "title": "Order Fresh Delivery to Your Door",
     "subtitle": "Enjoy piping hot, authentic Vietnamese meals safely delivered to your doorstep.",
-    "grabTitle": "GrabFood",
-    "grabDesc": "Fast delivery with special combo sets and seasonal promotions.",
-    "grabBtn": "Order on GrabFood",
+    "robinhoodTitle": "Robinhood",
+    "robinhoodDesc": "Thailand's beloved local delivery app with fair prices and direct delivery.",
+    "robinhoodBtn": "Order on Robinhood",
     "lineManTitle": "LINE MAN",
     "lineManDesc": "Comprehensive Bangkok delivery coverage with full restaurant menu.",
     "lineManBtn": "Order on LINE MAN",

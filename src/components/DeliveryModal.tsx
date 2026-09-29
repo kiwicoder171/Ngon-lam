@@ -62,35 +62,35 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
         {/* Delivery App Cards */}
         <div className="p-6 space-y-4">
           
-          {/* GrabFood Option */}
-          <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#00b14f] transition-colors">
+          {/* Robinhood Option */}
+          <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#581c87] transition-colors">
             <div className="flex items-start justify-between gap-4 mb-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-[#00b14f]/10 text-[#00b14f] flex items-center justify-center font-black text-lg">
-                  Grab
+                <div className="w-12 h-12 rounded-2xl bg-[#581c87]/10 text-[#581c87] flex items-center justify-center font-black text-lg">
+                  RH
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1b4332] text-base">
-                    {t('modalDelivery.grabTitle')}
+                    {t('modalDelivery.robinhoodTitle')}
                   </h4>
                   <p className="text-xs text-[#8d7b68]">
-                    {t('modalDelivery.grabDesc')}
+                    {t('modalDelivery.robinhoodDesc')}
                   </p>
                 </div>
               </div>
 
-              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#00b14f]/10 text-[#00b14f]">
-                ยอดนิยม
+              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#581c87]/10 text-[#581c87]">
+                ค่าส่งเป็นมิตร
               </span>
             </div>
 
             <a
-              href="https://food.grab.com/th/th/restaurant/%E0%B8%87%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B3-ngon-lam-%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2-9-delivery"
+              href="https://www.robinhood.in.th/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#00b14f] hover:bg-[#009b45] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
+              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#581c87] hover:bg-[#4a154b] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
             >
-              <span>{t('modalDelivery.grabBtn')}</span>
+              <span>{t('modalDelivery.robinhoodBtn')}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
