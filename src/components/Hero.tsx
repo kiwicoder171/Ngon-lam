@@ -124,8 +124,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               {/* Main Dish Imagery Container with decorative frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 aspect-[4/3] sm:aspect-square bg-[#2c221e]/5">
                 <img
-                  src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=1200&auto=format&fit=crop"
-                  alt="Authentic Vietnamese Pho at Ngon Lam"
+                  src="/images/dishes/pho-bo.jpg"
+                  alt="Authentic Vietnamese Beef Pho at Ngon Lam Chula Soi 9"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                   width="600"
                   height="600"

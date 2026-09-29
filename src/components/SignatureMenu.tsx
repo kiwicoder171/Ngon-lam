@@ -14,7 +14,7 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
   onOpenReservation,
 }) => {
   const { language, t } = useLanguage();
-  const [activeFilter, setActiveFilter] = useState<'all' | 'soup' | 'rolls' | 'drinks'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'soup' | 'rolls' | 'mains' | 'drinks'>('all');
   const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
 
   const filteredDishes = activeFilter === 'all'
@@ -51,6 +51,16 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
               {t('menu.filterAll')}
             </button>
             <button
+              onClick={() => setActiveFilter('rolls')}
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                activeFilter === 'rolls'
+                  ? 'bg-[#1b4332] text-white shadow-md'
+                  : 'bg-white text-[#403d39] border border-[#ded8cb] hover:border-[#1b4332]'
+              }`}
+            >
+              {t('menu.filterRolls')}
+            </button>
+            <button
               onClick={() => setActiveFilter('soup')}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeFilter === 'soup'
@@ -61,14 +71,14 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
               {t('menu.filterSoup')}
             </button>
             <button
-              onClick={() => setActiveFilter('rolls')}
+              onClick={() => setActiveFilter('mains')}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
-                activeFilter === 'rolls'
+                activeFilter === 'mains'
                   ? 'bg-[#1b4332] text-white shadow-md'
                   : 'bg-white text-[#403d39] border border-[#ded8cb] hover:border-[#1b4332]'
               }`}
             >
-              {t('menu.filterRolls')}
+              {t('menu.filterMains')}
             </button>
             <button
               onClick={() => setActiveFilter('drinks')}

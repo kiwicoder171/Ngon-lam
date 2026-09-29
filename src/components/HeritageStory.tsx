@@ -18,11 +18,11 @@ export const HeritageStory: React.FC = () => {
           {/* Left Column: Visual collage of kitchen craft & ingredients */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative">
-              {/* Main Photo: Steaming broth / traditional kitchen */}
+              {/* Main Photo: Overview feast table at Ngon Lam */}
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=900&auto=format&fit=crop"
-                  alt="Traditional Vietnamese cooking preparation"
+                  src="/images/dishes/table-feast.jpg"
+                  alt="Authentic Vietnamese Feast at Ngon Lam Chula Soi 9"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   width="500"
@@ -30,11 +30,11 @@ export const HeritageStory: React.FC = () => {
                 />
               </div>
 
-              {/* Sub Photo Overlaid: Fresh Vietnamese herbs */}
+              {/* Sub Photo Overlaid: Authentic Nem Nuong Platter with Fresh Herbs */}
               <div className="absolute -bottom-6 -right-6 w-3/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-square hidden sm:block">
                 <img
-                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=500&auto=format&fit=crop"
-                  alt="Fresh Vietnamese herbs and mint"
+                  src="/images/dishes/nem-nuong.jpg"
+                  alt="Authentic Nem Nuong Platter with fresh herbs"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   width="300"
