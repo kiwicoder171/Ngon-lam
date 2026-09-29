@@ -164,21 +164,6 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
               />
-
-              {/* Floating Map Label Badge */}
-              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-3 pointer-events-none">
-                <div className="w-8 h-8 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-bold text-xs">
-                  NL
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-[#1b4332]">
-                    {language === 'th' ? 'หง่อนหลำ จุฬา ซอย 9' : 'Ngon Lam Chula 9'}
-                  </div>
-                  <div className="text-[10px] text-gray-500">
-                    {language === 'th' ? 'ใกล้สามย่านมิตรทาวน์' : 'Near Samyan Mitrtown'}
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
