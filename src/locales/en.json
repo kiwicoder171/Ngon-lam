@@ -2,8 +2,8 @@
   "brand": {
     "name": "Ngon Lam",
     "subname": "Authentic Vietnamese Restaurant",
-    "est": "Over 30 Years of Heritage",
-    "shortEst": "Est. 30 Years",
+    "est": "Over 25 Years of Heritage",
+    "shortEst": "Est. 25+ Years",
     "location": "Chula Soi 9 (Samyan, Bangkok)"
   },
   "nav": {
@@ -15,8 +15,8 @@
     "deliveryCta": "Order Delivery"
   },
   "hero": {
-    "badge": "🌿 Authentic Vietnamese Heritage Perfected Over Nearly 30 Years • Chula 9",
-    "title": "Authentic Vietnamese Flavors in Chula 9 — Perfected Over Nearly 30 Years",
+    "badge": "🌿 Authentic Vietnamese Heritage Perfected Over 25 Years • Chula 9",
+    "title": "Authentic Vietnamese Flavors in Chula 9 — Perfected Over 25 Years",
     "subtitle": "Discover the true culinary soul of Vietnam: 12-hour simmered Phở broth, signature charcoal-grilled Nem Nướng with secret roasted liver sauce, and crisp organic herbs delivered fresh daily.",
     "dineInBtn": "Dine-in / Reserve Table",
     "deliveryBtn": "Order Direct Delivery",
@@ -26,7 +26,7 @@
     "statBrothSub": "Traditional Bone & Herb Broth",
     "statHerbs": "Daily Fresh Herbs",
     "statHerbsSub": "Crisp, Organic & Unlimited",
-    "statHeritage": "Nearly 30 Years",
+    "statHeritage": "Over 25 Years",
     "statHeritageSub": "Beloved Chula Landmark"
   },
   "menu": {
@@ -50,11 +50,11 @@
     "sectionBadge": "OUR HERITAGE",
     "title": "From Hanoi's Old Quarters to Bangkok's Vibrant Culinary Center",
     "p1": "Ngon Lam ('Ngon Lắm' in Vietnamese translates to 'Delicious!') was founded on a simple dedication: bringing pure, uncompromised Vietnamese home cooking to Bangkok food lovers. Our founder traveled extensively across Hanoi and Saigon to master the delicate art of Phở spices — roasting star anise, cinnamon bark, and black cardamom to balance our signature broth.",
-    "p2": "For almost three decades at Chula Soi 9, our commitment remains unwavering. Every morning starts with simmering beef and poultry bones for over 12 hours to achieve natural sweetness without excessive seasoning. Our Nem Nướng is skewers grilled over real charcoal, paired with a secret sauce blended with liver pâté and toasted sesame.",
+    "p2": "For more than 25 years at Chula Soi 9, our commitment remains unwavering. Every morning starts with simmering beef and poultry bones for over 12 hours to achieve natural sweetness without excessive seasoning. Our Nem Nướng is skewers grilled over real charcoal, paired with a secret sauce blended with liver pâté and toasted sesame.",
     "p3": "Whether you are a university student, an expat exploring Samyan, or a multi-generational family on your weekend feast, Ngon Lam welcomes you with authentic hospitality and enduring flavors.",
     "stat1": "12+",
     "stat1Label": "Hours simmering Phở broth daily",
-    "stat2": "30",
+    "stat2": "25+",
     "stat2Label": "Years established in Chula Soi 9",
     "stat3": "100%",
     "stat3Label": "Farm-fresh daily herbs & vegetables",
@@ -130,7 +130,7 @@
   },
   "footer": {
     "rights": "All rights reserved © 2026 Ngon Lam Vietnamese Restaurant, Chula Soi 9.",
-    "tagline": "Nearly 30 years of honest Vietnamese comfort food, clean ingredients, and heartwarming hospitality.",
+    "tagline": "Over 25 years of honest Vietnamese comfort food, clean ingredients, and heartwarming hospitality.",
     "designedFor": "Portfolio Project for High-Converting Restaurant Web Development"
   }
 }
