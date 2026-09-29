@@ -85,7 +85,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
             </div>
 
             <a
-              href="https://www.robinhood.in.th/"
+              href="https://d.robinhood.co.th/s/GHsPi55?lang=TH"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#581c87] hover:bg-[#4a154b] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
@@ -118,7 +118,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
             </div>
 
             <a
-              href="https://lineman.line.me/"
+              href="https://lin.ee/FcVemHp?openExternalBrowser=1"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#06c755] hover:bg-[#05b34c] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
