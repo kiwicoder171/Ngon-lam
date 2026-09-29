@@ -1,0 +1,130 @@
+{
+  "brand": {
+    "name": "Ngon Lam",
+    "subname": "Authentic Vietnamese Restaurant",
+    "est": "Over 30 Years of Heritage",
+    "shortEst": "Est. 30 Years",
+    "location": "Chula Soi 9 (Samyan, Bangkok)"
+  },
+  "nav": {
+    "menu": "Signature Dishes",
+    "story": "Heritage Story",
+    "reviews": "Reviews",
+    "location": "Location & Hours",
+    "dineInCta": "Reserve Table",
+    "deliveryCta": "Order Delivery"
+  },
+  "hero": {
+    "badge": "🌿 Authentic Vietnamese Heritage Perfected Over Nearly 30 Years • Chula 9",
+    "title": "Authentic Vietnamese Flavors in Chula 9 — Perfected Over Nearly 30 Years",
+    "subtitle": "Discover the true culinary soul of Vietnam: 12-hour simmered Phở broth, signature charcoal-grilled Nem Nướng with secret roasted liver sauce, and crisp organic herbs delivered fresh daily.",
+    "dineInBtn": "Dine-in / Reserve Table",
+    "deliveryBtn": "Order Direct Delivery",
+    "statRating": "4.2+ on Google Maps",
+    "statReviews": "350+ Verified Reviews",
+    "statBroth": "12-Hr Slow Simmered",
+    "statBrothSub": "Traditional Bone & Herb Broth",
+    "statHerbs": "Daily Fresh Herbs",
+    "statHerbsSub": "Crisp, Organic & Unlimited",
+    "statHeritage": "Nearly 30 Years",
+    "statHeritageSub": "Beloved Chula Landmark"
+  },
+  "menu": {
+    "sectionBadge": "SIGNATURE DISHES",
+    "title": "Chef's Handcrafted Highlights",
+    "subtitle": "Prepared to order using time-honored recipes and premium ingredients for balanced, authentic flavor.",
+    "filterAll": "All Dishes",
+    "filterSignature": "Signatures",
+    "filterSoup": "Phở & Soups",
+    "filterRolls": "Nem Nướng & Rolls",
+    "filterDrinks": "Drinks & Desserts",
+    "priceCurrency": "THB",
+    "viewDetails": "View Ingredients & Heritage",
+    "orderDish": "Order This Dish",
+    "chefNotes": "Chef's Craft & Origin",
+    "ingredients": "Key Ingredients",
+    "close": "Close"
+  },
+  "story": {
+    "sectionBadge": "OUR HERITAGE",
+    "title": "From Hanoi's Old Quarters to Bangkok's Vibrant Culinary Center",
+    "p1": "Ngon Lam ('Ngon Lắm' in Vietnamese translates to 'Delicious!') was founded on a simple dedication: bringing pure, uncompromised Vietnamese home cooking to Bangkok food lovers. Our founder traveled extensively across Hanoi and Saigon to master the delicate art of Phở spices — roasting star anise, cinnamon bark, and black cardamom to balance our signature broth.",
+    "p2": "For almost three decades at Chula Soi 9, our commitment remains unwavering. Every morning starts with simmering beef and poultry bones for over 12 hours to achieve natural sweetness without excessive seasoning. Our Nem Nướng is skewers grilled over real charcoal, paired with a secret sauce blended with liver pâté and toasted sesame.",
+    "p3": "Whether you are a university student, an expat exploring Samyan, or a multi-generational family on your weekend feast, Ngon Lam welcomes you with authentic hospitality and enduring flavors.",
+    "stat1": "12+",
+    "stat1Label": "Hours simmering Phở broth daily",
+    "stat2": "30",
+    "stat2Label": "Years established in Chula Soi 9",
+    "stat3": "100%",
+    "stat3Label": "Farm-fresh daily herbs & vegetables",
+    "stat4": "350+",
+    "stat4Label": "Google verified 4+ star reviews"
+  },
+  "reviews": {
+    "sectionBadge": "REAL REVIEWS",
+    "title": "Loved by Locals, Expats & Foodies",
+    "subtitle": "4.2 Star average rating on Google Maps across 350+ genuine customer reviews",
+    "googleVerified": "Verified Google Maps Reviews",
+    "viewAllGoogle": "Read All Reviews on Google Maps",
+    "filterAll": "All Reviews",
+    "filterPho": "Phở & Broth Fans",
+    "filterNem": "Nem Nướng & Platters",
+    "filterVibe": "Atmosphere & Service"
+  },
+  "location": {
+    "sectionBadge": "VISIT US",
+    "title": "Dine In or Take Away Today",
+    "subtitle": "Conveniently situated in Samyan, minutes from MRT Samyan with easy parking.",
+    "addressTitle": "Restaurant Address",
+    "address": "234 Chulalongkorn Soi 9, Wang Mai, Pathum Wan, Bangkok 10330",
+    "landmark": "(Near Saphan Lueang intersection, 5-min walk from MRT Samyan Exit 2 or Samyan Mitrtown)",
+    "hoursTitle": "Operating Hours",
+    "hours": "Daily: 10:30 AM - 8:30 PM",
+    "statusOpen": "Open Now (Closes at 8:30 PM)",
+    "statusClosed": "Currently Closed (Opens at 10:30 AM)",
+    "phoneTitle": "Direct Reservation Numbers",
+    "phone": "+66 2 214 4113 / +66 81 817 4322",
+    "getDirections": "Open in Google Maps",
+    "callNow": "Call Restaurant",
+    "transitMRT": "MRT Samyan Exit 2 (approx. 450 meters walk)",
+    "transitParking": "Parking available at Suanluang Square and Chulalongkorn Car Park",
+    "deliveryDirect": "Delivery available daily on GrabFood and LINE MAN during store hours"
+  },
+  "modalReservation": {
+    "title": "Reserve Table & Inquiries",
+    "subtitle": "Ngon Lam Chula 9 welcomes you for lunch and dinner",
+    "callDirectTitle": "Instant Phone Reservation",
+    "callDirectDesc": "Recommended for same-day dining or parties of 4 or more.",
+    "callBtn": "Call 02-214-4113",
+    "callBtnAlt": "Call 081-817-4322",
+    "chatLineTitle": "LINE Official Booking",
+    "chatLineDesc": "Pre-order items, ask dietary questions, or reserve in advance.",
+    "chatLineBtn": "Chat on LINE OA",
+    "chatFbTitle": "Facebook Messenger",
+    "chatFbDesc": "Follow updates and send direct inquiries to our staff.",
+    "chatFbBtn": "Message on Facebook",
+    "walkInNote": "💡 Tip: Walk-ins are always warmly welcomed! During peak lunch (11:30 - 13:00) and dinner (18:00 - 19:30), call ahead to check live seating.",
+    "close": "Close"
+  },
+  "modalDelivery": {
+    "title": "Order Fresh Delivery to Your Door",
+    "subtitle": "Enjoy piping hot, authentic Vietnamese meals safely delivered to your doorstep.",
+    "grabTitle": "GrabFood",
+    "grabDesc": "Fast delivery with special combo sets and seasonal promotions.",
+    "grabBtn": "Order on GrabFood",
+    "lineManTitle": "LINE MAN",
+    "lineManDesc": "Comprehensive Bangkok delivery coverage with full restaurant menu.",
+    "lineManBtn": "Order on LINE MAN",
+    "packagingNote": "🍲 Every delivery order is packed with sealed soup pouches and crisp separated vegetables to ensure maximum freshness and heat.",
+    "close": "Close"
+  },
+  "dock": {
+    "reserve": "📞 Call / Reserve Table",
+    "delivery": "🛵 Order Delivery"
+  },
+  "footer": {
+    "rights": "All rights reserved © 2026 Ngon Lam Vietnamese Restaurant, Chula Soi 9.",
+    "tagline": "Nearly 30 years of honest Vietnamese comfort food, clean ingredients, and heartwarming hospitality.",
+    "designedFor": "Portfolio Project for High-Converting Restaurant Web Development"
+  }
+}
