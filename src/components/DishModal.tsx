@@ -67,22 +67,16 @@ export const DishModal: React.FC<DishModalProps> = ({
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             
             {/* Badges on Image */}
-            <div className="absolute bottom-4 left-5 right-5 flex flex-wrap items-end justify-between gap-2">
-              <div>
-                <span className="inline-block px-3 py-1 bg-[#1b4332] text-[#e9c46a] text-xs font-bold rounded-full mb-1.5 shadow-sm">
-                  {language === 'th' ? dish.badgeTh : dish.badgeEn}
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md">
-                  {language === 'th' ? dish.nameTh : dish.nameEn}
-                </h3>
-                <p className="text-sm font-semibold text-emerald-300 italic tracking-wider">
-                  {dish.nameVi}
-                </p>
-              </div>
-
-              <div className="bg-[#e9c46a] text-[#1b4332] px-4 py-1.5 rounded-2xl font-black text-xl shadow-lg">
-                ฿{dish.price}
-              </div>
+            <div className="absolute bottom-4 left-5 right-5">
+              <span className="inline-block px-3 py-1 bg-[#1b4332] text-[#e9c46a] text-xs font-bold rounded-full mb-1.5 shadow-sm">
+                {language === 'th' ? dish.badgeTh : dish.badgeEn}
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md">
+                {language === 'th' ? dish.nameTh : dish.nameEn}
+              </h3>
+              <p className="text-sm font-semibold text-emerald-300 italic tracking-wider">
+                {dish.nameVi}
+              </p>
             </div>
           </div>
 

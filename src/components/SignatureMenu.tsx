@@ -107,11 +107,6 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
                     {language === 'th' ? dish.badgeTh : dish.badgeEn}
                   </span>
                 </div>
-
-                {/* Price Pill */}
-                <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-xs text-[#1b4332] font-extrabold text-sm px-3 py-1 rounded-full shadow-md border border-[#e8e2d8]">
-                  ฿{dish.price}
-                </div>
               </div>
 
               {/* Card Body */}
