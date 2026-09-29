@@ -47,8 +47,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
               href="#location" 
               className="hover:text-emerald-200 flex items-center gap-1 transition-colors text-[11px] sm:text-xs"
             >
-              <MapPin className="w-3 h-3 text-emerald-300" />
-              <span>{language === 'th' ? 'จุฬา ซอย 9 (MRT สามย่าน)' : 'Chula Soi 9 (MRT Samyan)'}</span>
+              <MapPin className="w-3 h-3 text-emerald-300 shrink-0" />
+              <span>{language === 'th' ? 'จุฬา ซอย 9' : 'Chula Soi 9'}</span>
+              <span className="hidden sm:inline text-emerald-200/70">{language === 'th' ? '(MRT สามย่าน)' : '(MRT Samyan)'}</span>
             </a>
             <div className="flex items-center border border-emerald-600/60 rounded-full overflow-hidden text-[11px] font-semibold">
               <button
@@ -116,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
           </nav>
 
           {/* Action CTAs & Language Switcher */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <button
               onClick={onOpenReservation}
               className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[#1b4332] text-[#1b4332] hover:bg-[#1b4332] hover:text-white font-semibold text-sm transition-all duration-200 cursor-pointer shadow-sm active:scale-95"

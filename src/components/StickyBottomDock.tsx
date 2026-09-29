@@ -16,7 +16,7 @@ export const StickyBottomDock: React.FC<StickyBottomDockProps> = ({
   return (
     <aside 
       aria-label="Mobile quick actions"
-      className="fixed bottom-0 left-0 right-0 z-40 lg:hidden p-3 bg-white/95 backdrop-blur-md border-t border-[#ded8cb] shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))]"
+      className="fixed bottom-0 left-0 right-0 z-40 md:hidden p-3 bg-white/95 backdrop-blur-md border-t border-[#ded8cb] shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))]"
     >
       <div className="max-w-md mx-auto flex items-center gap-2">
         {/* Left Action (60% width): Phone Reservation & Chat Inquiry */}

@@ -34,11 +34,11 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
       aria-modal="true"
     >
       <div
-        className="relative w-full max-w-lg bg-[#faf8f5] rounded-3xl shadow-2xl overflow-hidden border border-[#ded8cb]"
+        className="relative w-full max-w-lg bg-[#faf8f5] rounded-3xl shadow-2xl overflow-hidden max-h-[88dvh] sm:max-h-[90vh] flex flex-col border border-[#ded8cb]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-[#1b4332] p-6 text-white relative">
+        <div className="bg-[#1b4332] p-5 sm:p-6 text-white relative shrink-0">
           <button
             onClick={onClose}
             className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors cursor-pointer"
@@ -51,7 +51,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
             <Bike className="w-3 h-3" />
             <span>Delivery Services</span>
           </div>
-          <h3 className="text-2xl font-black tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black tracking-tight">
             {t('modalDelivery.title')}
           </h3>
           <p className="text-xs sm:text-sm text-emerald-100/90 mt-1">
@@ -60,7 +60,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
         </div>
 
         {/* Delivery App Cards */}
-        <div className="p-6 space-y-4">
+        <div className="p-5 sm:p-6 space-y-4 overflow-y-auto overscroll-contain flex-1">
           
           {/* Robinhood Option */}
           <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#581c87] transition-colors">

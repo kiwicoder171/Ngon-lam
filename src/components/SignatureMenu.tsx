@@ -91,14 +91,14 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
               className="group bg-white rounded-3xl overflow-hidden border border-[#e8e2d8] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               {/* Image Container with Badges */}
-              <div className="relative h-56 sm:h-60 overflow-hidden bg-gray-100">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100">
                 <img
                   src={dish.image}
                   alt={language === 'th' ? dish.nameTh : dish.nameEn}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   width="400"
-                  height="240"
+                  height="250"
                 />
                 
                 {/* Badge Tag */}

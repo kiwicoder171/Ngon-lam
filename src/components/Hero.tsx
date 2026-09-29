@@ -151,8 +151,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               </div>
 
               {/* Floating Social Proof Card 1: Top Left */}
-              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-3 animate-bounce-subtle">
-                <div className="w-10 h-10 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-black text-sm shadow-sm">
+              <div className="absolute top-2 left-2 sm:-top-4 sm:-left-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-3">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-black text-xs sm:text-sm shadow-sm shrink-0">
                   30
                 </div>
                 <div>
@@ -166,7 +166,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               </div>
 
               {/* Floating Review Card 2: Bottom Right */}
-              <div className="absolute -bottom-5 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3">
+              <div className="absolute bottom-2 right-2 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2.5 sm:gap-3">
                 <div className="flex -space-x-2 overflow-hidden">
                   <img
                     className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"

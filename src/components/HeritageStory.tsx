@@ -43,7 +43,7 @@ export const HeritageStory: React.FC = () => {
               </div>
 
               {/* Heritage stamp */}
-              <div className="absolute -top-5 -left-5 bg-[#1b4332] text-[#e9c46a] p-4 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
+              <div className="absolute top-3 left-3 sm:-top-5 sm:-left-5 bg-[#1b4332] text-[#e9c46a] p-3 sm:p-4 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
                 <Award className="w-6 h-6 mb-1 text-[#e9c46a]" />
                 <span className="text-xl font-black leading-none">1995</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-emerald-200 mt-1">

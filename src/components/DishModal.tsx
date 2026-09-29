@@ -42,7 +42,7 @@ export const DishModal: React.FC<DishModalProps> = ({
       aria-modal="true"
     >
       <div
-        className="relative w-full max-w-2xl bg-[#faf8f5] rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col border border-[#e8e2d8]"
+        className="relative w-full max-w-2xl bg-[#faf8f5] rounded-3xl shadow-2xl overflow-hidden max-h-[88dvh] sm:max-h-[90vh] flex flex-col border border-[#e8e2d8]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
@@ -55,9 +55,9 @@ export const DishModal: React.FC<DishModalProps> = ({
         </button>
 
         {/* Modal Scrollable Body */}
-        <div className="overflow-y-auto">
+        <div className="overflow-y-auto overscroll-contain">
           {/* Dish Hero Image with Badge */}
-          <div className="relative h-64 sm:h-72 w-full bg-[#2c221e]/10">
+          <div className="relative h-48 sm:h-64 md:h-72 w-full bg-[#2c221e]/10">
             <img
               src={dish.image}
               alt={language === 'th' ? dish.nameTh : dish.nameEn}

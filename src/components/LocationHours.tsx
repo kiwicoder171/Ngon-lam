@@ -151,14 +151,14 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
           </div>
 
           {/* Interactive Map Column */}
-          <div className="lg:col-span-6 h-full min-h-[380px] sm:min-h-[460px]">
-            <div className="w-full h-full rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-gray-200 relative min-h-[380px]">
+          <div className="lg:col-span-6 h-full min-h-[320px] sm:min-h-[420px] lg:min-h-[480px]">
+            <div className="w-full h-full rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-gray-200 relative min-h-[320px] sm:min-h-[420px]">
               <iframe
                 title="Ngon Lam Vietnamese Restaurant Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7486745196556!2d100.5262113!3d13.7367001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299292a8e8b07%3A0x7d6fbc3b7152060c!2sChulalongkorn%209%20Alley%2C%20Wang%20Mai%2C%20Pathum%20Wan%2C%20Bangkok%2010330!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: '420px' }}
+                style={{ border: 0, minHeight: '320px' }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

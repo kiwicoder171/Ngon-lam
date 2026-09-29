@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#1b4332] text-[#f4eee6] pt-16 pb-24 lg:pb-16 border-t border-[#2d6a4f]/50">
+    <footer className="bg-[#1b4332] text-[#f4eee6] pt-16 pb-28 md:pb-16 border-t border-[#2d6a4f]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-emerald-800/60">
