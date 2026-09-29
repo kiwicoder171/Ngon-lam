@@ -62,39 +62,6 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
         {/* Delivery App Cards */}
         <div className="p-5 sm:p-6 space-y-4 overflow-y-auto overscroll-contain flex-1">
           
-          {/* Robinhood Option */}
-          <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#581c87] transition-colors">
-            <div className="flex items-start justify-between gap-4 mb-3">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-[#581c87]/10 text-[#581c87] flex items-center justify-center font-black text-lg">
-                  RH
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#1b4332] text-base">
-                    {t('modalDelivery.robinhoodTitle')}
-                  </h4>
-                  <p className="text-xs text-[#8d7b68]">
-                    {t('modalDelivery.robinhoodDesc')}
-                  </p>
-                </div>
-              </div>
-
-              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#581c87]/10 text-[#581c87]">
-                ค่าส่งเป็นมิตร
-              </span>
-            </div>
-
-            <a
-              href="https://d.robinhood.co.th/s/GHsPi55?lang=TH"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#581c87] hover:bg-[#4a154b] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
-            >
-              <span>{t('modalDelivery.robinhoodBtn')}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
-
           {/* LINE MAN Option */}
           <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#06c755] transition-colors">
             <div className="flex items-start justify-between gap-4 mb-3">
@@ -124,6 +91,39 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
               className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#06c755] hover:bg-[#05b34c] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
             >
               <span>{t('modalDelivery.lineManBtn')}</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+
+          {/* Robinhood Option */}
+          <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#581c87] transition-colors">
+            <div className="flex items-start justify-between gap-4 mb-3">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-2xl bg-[#581c87]/10 text-[#581c87] flex items-center justify-center font-black text-lg">
+                  RH
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#1b4332] text-base">
+                    {t('modalDelivery.robinhoodTitle')}
+                  </h4>
+                  <p className="text-xs text-[#8d7b68]">
+                    {t('modalDelivery.robinhoodDesc')}
+                  </p>
+                </div>
+              </div>
+
+              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#581c87]/10 text-[#581c87]">
+                ค่าส่งเป็นมิตร
+              </span>
+            </div>
+
+            <a
+              href="https://d.robinhood.co.th/s/GHsPi55?lang=TH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#581c87] hover:bg-[#4a154b] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
+            >
+              <span>{t('modalDelivery.robinhoodBtn')}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
