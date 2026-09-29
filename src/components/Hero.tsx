@@ -167,22 +167,30 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
 
               {/* Floating Review Card 2: Bottom Right */}
               <div className="absolute bottom-2 right-2 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2.5 sm:gap-3">
-                <div className="flex -space-x-2 overflow-hidden">
-                  <img
-                    className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop"
-                    alt="Customer"
-                  />
-                  <img
-                    className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop"
-                    alt="Customer"
-                  />
-                  <img
-                    className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop"
-                    alt="Customer"
-                  />
+                <div className="flex -space-x-1.5 overflow-hidden">
+                  <div 
+                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-white shadow-xs"
+                    title="Google Reviews"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24">
+                      <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                      <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                      <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.99 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
+                      <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                    </svg>
+                  </div>
+                  <div 
+                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-[#0050f0] text-white shadow-xs font-black text-xs"
+                    title="Wongnai Reviews"
+                  >
+                    W
+                  </div>
+                  <div 
+                    className="inline-flex items-center justify-center h-8 w-8 rounded-full ring-2 ring-white bg-[#1b4332] text-[#e9c46a] shadow-xs font-bold text-xs"
+                    title="Verified Diners"
+                  >
+                    ★
+                  </div>
                 </div>
                 <div>
                   <div className="flex items-center gap-1">
