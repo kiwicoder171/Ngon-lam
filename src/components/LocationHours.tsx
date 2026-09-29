@@ -105,7 +105,7 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
               {/* Action Buttons */}
               <div className="pt-5 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+หง่อนหลำ+จุฬา+ซอย+9"
+                  href="https://maps.google.com/?cid=604739504812316184"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#1b4332] hover:bg-[#081c15] text-white font-bold text-sm shadow-md transition-all"
@@ -155,7 +155,7 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
             <div className="w-full h-full rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-gray-200 relative min-h-[320px] sm:min-h-[420px]">
               <iframe
                 title="Ngon Lam Vietnamese Restaurant Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7486745196556!2d100.5262113!3d13.7367001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299292a8e8b07%3A0x7d6fbc3b7152060c!2sChulalongkorn%209%20Alley%2C%20Wang%20Mai%2C%20Pathum%20Wan%2C%20Bangkok%2010330!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.726964614866!2d100.52460819999999!3d13.7349733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29929e1d06277%3A0x864734bb66c5618!2z4Lit4Liy4Lir4Liy4Lij4LmA4Lin4Li14Lii4LiU4LiZ4Liy4Lih4Lir4LiH4LmI4Lit4LiZ4Lir4Lil4LizIE5nb25sYW0gVmlldG5hbWVzIHJlc3RhdXJhbnQ!5e0!3m2!1sth!2sth!4v1790718536003!5m2!1sth!2sth"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '320px' }}

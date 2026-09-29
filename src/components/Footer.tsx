@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
               </a>
 
               <a
-                href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+หง่อนหลำ+จุฬา+ซอย+9"
+                href="https://maps.google.com/?cid=604739504812316184"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Maps Location"

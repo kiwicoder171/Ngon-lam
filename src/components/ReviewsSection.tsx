@@ -47,7 +47,7 @@ export const ReviewsSection: React.FC = () => {
                   ))}
                 </div>
                 <a
-                  href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+หง่อนหลำ+จุฬา+ซอย+9"
+                  href="https://maps.google.com/?cid=604739504812316184"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-[#1b4332] hover:underline flex items-center gap-1"
@@ -263,7 +263,7 @@ export const ReviewsSection: React.FC = () => {
         {/* Dual External Profile Verification Links */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10">
           <a
-            href="https://maps.google.com/?q=ร้านอาหารเวียดนาม+หง่อนหลำ+จุฬา+ซอย+9"
+            href="https://maps.google.com/?cid=604739504812316184"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-[#f4eee6] text-[#1b4332] font-bold text-xs sm:text-sm border border-[#d6cfc2] shadow-sm hover:shadow-md transition-all"
