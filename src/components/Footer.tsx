@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Utensils, Phone, MapPin, MessageCircle, ArrowUp } from 'lucide-react';
+import { Phone, MapPin, MessageCircle, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const { language, t } = useLanguage();
@@ -26,8 +26,14 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#e9c46a] text-[#1b4332] flex items-center justify-center font-black">
-                <Utensils className="w-5 h-5" />
+              <div className="w-11 h-11 rounded-full overflow-hidden shadow-md border-2 border-white/20 shrink-0 bg-[#239213]">
+                <img 
+                  src="/images/logo/logo.jpg" 
+                  alt="Ngon Lam Vietnamese Restaurant Logo" 
+                  className="w-full h-full object-cover scale-[1.03]"
+                  width="44"
+                  height="44"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-black tracking-tight text-white">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Utensils, Phone, Bike, Menu as MenuIcon, X, Clock, MapPin } from 'lucide-react';
+import { Phone, Bike, Menu as MenuIcon, X, Clock, MapPin } from 'lucide-react';
 import { getRestaurantStatus } from '../data/restaurantData';
 
 interface NavbarProps {
@@ -98,8 +98,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenReservation, onOpenDeliver
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo & Heritage badge */}
           <a href="#" onClick={scrollToTop} className="flex items-center gap-3 group">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#1b4332] to-[#2d6a4f] flex items-center justify-center text-white shadow-md shadow-emerald-950/20 group-hover:scale-105 transition-transform">
-              <Utensils className="w-5 h-5 sm:w-6 sm:h-6 text-[#e9c46a]" />
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-md border-2 border-[#1b4332]/20 group-hover:scale-105 transition-transform shrink-0 bg-[#239213]">
+              <img 
+                src="/images/logo/logo.jpg" 
+                alt="Ngon Lam (หง่อนหลำ) Vietnamese Restaurant Logo" 
+                className="w-full h-full object-cover scale-[1.03]"
+                width="44"
+                height="44"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">
