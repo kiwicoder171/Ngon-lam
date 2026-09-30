@@ -115,7 +115,9 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-sm text-emerald-100/80">
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#e9c46a] shrink-0" />
-                <span>02-214-4113 / 081-817-4322</span>
+                <span>
+                  Tel: <a href="tel:020201057" className="hover:underline">02-020-1057</a> · Mobile: <a href="tel:0894827272" className="hover:underline">089-482-7272</a>
+                </span>
               </p>
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#e9c46a] shrink-0 mt-0.5" />

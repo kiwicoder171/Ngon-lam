@@ -93,6 +93,12 @@ export const LocationHours: React.FC<LocationHoursProps> = ({
               {/* Transit & Commute tips */}
               <div className="space-y-2 pt-4 border-t border-[#f0ece1] text-xs text-[#55473e]">
                 <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-[#2d6a4f] shrink-0" />
+                  <span>
+                    Tel: <a href="tel:020201057" className="font-semibold text-[#1b4332] hover:underline">02-020-1057</a> · Mobile: <a href="tel:0894827272" className="font-semibold text-[#1b4332] hover:underline">089-482-7272</a>
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
                   <Train className="w-4 h-4 text-[#2d6a4f] shrink-0" />
                   <span>{t('location.transitMRT')}</span>
                 </div>

@@ -79,19 +79,19 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onCl
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
               <a
-                href="tel:022144113"
+                href="tel:020201057"
                 className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-[#1b4332] hover:bg-[#081c15] text-white text-xs font-bold transition-all shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5 text-[#e9c46a]" />
-                <span>02-214-4113</span>
+                <span>Tel 02-020-1057</span>
               </a>
 
               <a
-                href="tel:0818174322"
+                href="tel:0894827272"
                 className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-[#2d6a4f] hover:bg-[#1b4332] text-white text-xs font-bold transition-all shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5 text-[#e9c46a]" />
-                <span>081-817-4322</span>
+                <span>Mobile 089-482-7272</span>
               </a>
             </div>
           </div>
