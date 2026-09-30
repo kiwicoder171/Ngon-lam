@@ -60,91 +60,101 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
             </div>
 
             {/* Proof Metric Badges Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-[#e3dcd1]">
+            {/* Proof Metrics & Credibility */}
+            <div className="pt-6 border-t border-[#e3dcd1] space-y-3">
+              {/* Comprehensive Social Proof Bar across all 3 platforms */}
               <div 
                 onClick={() => {
                   document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="flex items-start gap-2.5 cursor-pointer group/stat hover:opacity-90 transition-opacity"
-                title={language === 'th' ? 'ดูรีวิวทั้งหมดบน Google และ Wongnai' : 'View all Google & Wongnai Reviews'}
+                className="bg-white/80 hover:bg-white p-2.5 sm:p-3 rounded-2xl border border-[#ded8cb] shadow-xs flex items-center justify-between gap-3 cursor-pointer transition-all group/stat"
+                title={language === 'th' ? 'ดูรีวิวทั้งหมดบน LINE MAN, Google และ Wongnai' : 'View all Reviews'}
               >
-                <div className="flex -space-x-1.5 shrink-0 mt-0.5">
-                  <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg ring-1 ring-black/10 bg-[#06c755] text-white shadow-xs font-black text-xs"
-                    title="LINE MAN Reviews (4.9★)"
-                  >
-                    LM
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <div className="flex -space-x-1.5 shrink-0">
+                    <div 
+                      className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-lg ring-1 ring-black/10 bg-[#06c755] text-white shadow-xs font-black text-[11px]"
+                      title="LINE MAN Reviews (4.9★)"
+                    >
+                      LM
+                    </div>
+                    <div 
+                      className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-lg ring-1 ring-black/10 bg-white shadow-xs p-1"
+                      title="Google Reviews"
+                    >
+                      <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                        <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                        <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.99 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
+                        <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                      </svg>
+                    </div>
+                    <div 
+                      className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-lg ring-1 ring-black/10 bg-[#0050f0] text-white shadow-xs font-black text-[11px]"
+                      title="Wongnai Reviews"
+                    >
+                      W
+                    </div>
                   </div>
-                  <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg ring-1 ring-black/10 bg-white shadow-xs p-1"
-                    title="Google Reviews"
-                  >
-                    <svg className="w-4 h-4" viewBox="0 0 24 24">
-                      <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
-                      <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
-                      <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.99 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
-                      <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
-                    </svg>
-                  </div>
-                  <div 
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg ring-1 ring-black/10 bg-[#0050f0] text-white shadow-xs font-black text-xs"
-                    title="Wongnai Reviews"
-                  >
-                    W
+                  <div className="min-w-0">
+                    <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight flex items-center gap-1.5">
+                      <span className="text-[#06c755]">4.9★</span>
+                      <span className="text-gray-300 font-light">·</span>
+                      <span className="text-[#ea4335]">4.2★</span>
+                      <span className="text-gray-300 font-light">·</span>
+                      <span className="text-[#0050f0]">4.0★</span>
+                    </div>
+                    <div className="text-[11px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
+                      {t('hero.statReviews')}
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="font-extrabold text-sm text-[#2c221e] leading-tight flex items-center gap-1 group-hover/stat:text-[#1b4332]">
-                    <span className="text-[#06c755]">4.9★</span>
-                    <span className="text-gray-300 font-light">·</span>
-                    <span>4.2★</span>
-                    <span className="text-gray-300 font-light">·</span>
-                    <span className="text-[#0050f0]">4.0★</span>
-                  </div>
-                  <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
-                    {t('hero.statReviews')}
-                  </div>
-                </div>
+                <span className="text-[10px] sm:text-[11px] font-bold text-[#1b4332] bg-[#1b4332]/10 px-2.5 py-1 rounded-full shrink-0 group-hover/stat:bg-[#1b4332] group-hover/stat:text-white transition-colors">
+                  {language === 'th' ? 'ดูรีวิว' : 'Reviews'} →
+                </span>
               </div>
 
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600 mt-0.5">
-                  <Flame className="w-4 h-4 text-emerald-600" />
-                </div>
-                <div>
-                  <div className="font-extrabold text-sm text-[#2c221e] leading-tight">
-                    {language === 'th' ? '12 ชม.' : '12 Hours'}
+              {/* 3 Heritage Pillars Grid */}
+              <div className="grid grid-cols-3 gap-2 sm:gap-3">
+                <div className="flex items-start gap-1.5 sm:gap-2.5 bg-white/50 sm:bg-transparent p-2 sm:p-0 rounded-xl">
+                  <div className="p-1.5 sm:p-2 rounded-lg bg-emerald-500/10 text-emerald-600 shrink-0 mt-0.5">
+                    <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600" />
                   </div>
-                  <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
-                    {language === 'th' ? 'ซุปเคี่ยวข้ามคืน' : 'Simmered Broth'}
+                  <div className="min-w-0">
+                    <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight truncate">
+                      {language === 'th' ? '12 ชม.' : '12 Hours'}
+                    </div>
+                    <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
+                      {language === 'th' ? 'ซุปเคี่ยวข้ามคืน' : 'Simmered Broth'}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-green-500/10 text-green-700 mt-0.5">
-                  <ShieldCheck className="w-4 h-4 text-green-700" />
-                </div>
-                <div>
-                  <div className="font-extrabold text-sm text-[#2c221e] leading-tight">
-                    {language === 'th' ? '100% สดใหม่' : '100% Fresh'}
+                <div className="flex items-start gap-1.5 sm:gap-2.5 bg-white/50 sm:bg-transparent p-2 sm:p-0 rounded-xl">
+                  <div className="p-1.5 sm:p-2 rounded-lg bg-green-500/10 text-green-700 shrink-0 mt-0.5">
+                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-700" />
                   </div>
-                  <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
-                    {language === 'th' ? 'ผักสดคัดสวนทุกวัน' : 'Organic Herbs Daily'}
+                  <div className="min-w-0">
+                    <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight truncate">
+                      {language === 'th' ? '100% สด' : '100% Fresh'}
+                    </div>
+                    <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
+                      {language === 'th' ? 'ผักสดคัดสวน' : 'Organic Herbs'}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex items-start gap-2.5">
-                <div className="p-2 rounded-lg bg-amber-700/10 text-amber-800 mt-0.5">
-                  <HeartHandshake className="w-4 h-4 text-amber-800" />
-                </div>
-                <div>
-                  <div className="font-extrabold text-sm text-[#2c221e] leading-tight">
-                    {language === 'th' ? 'กว่า 25 ปี' : '25+ Years'}
+                <div className="flex items-start gap-1.5 sm:gap-2.5 bg-white/50 sm:bg-transparent p-2 sm:p-0 rounded-xl">
+                  <div className="p-1.5 sm:p-2 rounded-lg bg-amber-700/10 text-amber-800 shrink-0 mt-0.5">
+                    <HeartHandshake className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-800" />
                   </div>
-                  <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
-                    {language === 'th' ? 'คู่สามย่าน-จุฬาฯ' : 'Chula Soi 9 Legacy'}
+                  <div className="min-w-0">
+                    <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight truncate">
+                      {language === 'th' ? 'กว่า 25 ปี' : '25+ Years'}
+                    </div>
+                    <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
+                      {language === 'th' ? 'คู่สามย่าน' : 'Chula Legacy'}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -168,33 +178,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                 />
 
                 {/* Subtle dark gradient overlay on bottom for badge legibility */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30"></div>
 
-                {/* Bottom dish label */}
-                <div className="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 max-w-[38%] sm:max-w-[42%] text-white pointer-events-none z-0">
+                {/* Top dish label (Separated to top-left to avoid colliding with floating review card at bottom) */}
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 text-white pointer-events-none z-10">
                   <div className="inline-block px-2 py-0.5 bg-[#e9c46a] text-black text-[10px] font-bold rounded uppercase tracking-wider mb-1 shadow-xs">
                     Signature Highlight
                   </div>
                   <h3 className="text-xs sm:text-base font-bold leading-tight drop-shadow-md">
                     {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนือง' : 'Beef Phở & Nem Nướng'}
                   </h3>
-                  <p className="text-[10px] sm:text-[11px] text-white/90 drop-shadow-sm mt-0.5 line-clamp-1 sm:line-clamp-2">
+                  <p className="text-[10px] sm:text-[11px] text-white/90 drop-shadow-sm mt-0.5">
                     {language === 'th' ? 'ซุปเคี่ยว 12 ชม. ผักสดไม่อั้น' : '12-hr simmered broth'}
                   </p>
                 </div>
               </div>
 
-              {/* Floating Social Proof Card 1: Top Left */}
-              <div className="absolute top-2 left-2 sm:-top-4 sm:-left-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-3">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-black text-xs sm:text-sm shadow-sm shrink-0">
+              {/* Floating Social Proof Card 1: Top Right on desktop */}
+              <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-2.5 z-10">
+                <div className="w-8 h-8 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-black text-xs shadow-sm shrink-0">
                   25+
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#1b4332]">
-                    {language === 'th' ? 'สูตรแท้จากฮานอย' : 'Heritage Hanoi Recipe'}
+                    {language === 'th' ? 'สูตรแท้ฮานอย' : 'Heritage Hanoi'}
                   </div>
-                  <div className="text-[11px] text-gray-500">
-                    {language === 'th' ? 'เปิดบริการยาวนานกว่า 25 ปี' : 'Serving for over 25 years'}
+                  <div className="text-[10px] text-gray-500">
+                    {language === 'th' ? 'กว่า 25 ปีในสามย่าน' : '25+ years in Samyan'}
                   </div>
                 </div>
               </div>
@@ -204,21 +214,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                 onClick={() => {
                   document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="absolute -bottom-3 right-1.5 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-md px-2.5 py-1.5 sm:px-3.5 sm:py-2.5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2 sm:gap-2.5 z-10 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all"
-                title={language === 'th' ? 'ดูรีวิวทั้งหมดบน Google และ Wongnai' : 'View all Google & Wongnai Reviews'}
+                className="absolute -bottom-3 right-1.5 sm:-bottom-5 sm:-right-5 bg-white/95 backdrop-blur-md px-2.5 py-1.5 sm:px-3.5 sm:py-2.5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-2 sm:gap-2.5 z-10 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all max-w-[85%] sm:max-w-none"
+                title={language === 'th' ? 'ดูรีวิวทั้งหมดบน LINE MAN, Google และ Wongnai' : 'View all Reviews'}
               >
                 <div className="flex -space-x-1.5 overflow-hidden shrink-0">
                   <div 
-                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#06c755] text-white shadow-xs font-black text-xs"
+                    className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white bg-[#06c755] text-white shadow-xs font-black text-[10px]"
                     title="LINE MAN Reviews (4.9★)"
                   >
                     LM
                   </div>
                   <div 
-                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-white shadow-xs"
+                    className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white bg-white shadow-xs p-0.5"
                     title="Google Reviews"
                   >
-                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24">
                       <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
                       <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
                       <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.99 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
@@ -226,7 +236,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     </svg>
                   </div>
                   <div 
-                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#0050f0] text-white shadow-xs font-black text-xs"
+                    className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-full ring-2 ring-white bg-[#0050f0] text-white shadow-xs font-black text-[10px]"
                     title="Wongnai Reviews"
                   >
                     W
@@ -237,27 +247,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     {/* 4.9 Fractional Star Rating (4 full + 1 at 90%) */}
                     <div className="flex items-center gap-0.5">
                       {[1, 2, 3, 4, 5].map((starIndex) => (
-                        <div key={starIndex} className="relative w-3.5 h-3.5 shrink-0">
-                          <Star className="w-3.5 h-3.5 text-gray-200 fill-gray-200" />
+                        <div key={starIndex} className="relative w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0">
+                          <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-200 fill-gray-200" />
                           <div 
                             className="absolute inset-0 overflow-hidden" 
                             style={{ width: starIndex <= 4 ? '100%' : '90%' }}
                           >
-                            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                            <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-400" />
                           </div>
                         </div>
                       ))}
                     </div>
-                    <div className="text-xs font-extrabold text-[#1b4332] leading-none flex items-center gap-0.5">
+                    <div className="text-[11px] sm:text-xs font-extrabold text-[#1b4332] leading-none flex items-center gap-0.5">
                       <span className="text-[#06c755]">4.9★</span>
                       <span className="text-gray-300 font-normal">·</span>
-                      <span>4.2★</span>
+                      <span className="text-[#ea4335]">4.2★</span>
                       <span className="text-gray-300 font-normal">·</span>
                       <span className="text-[#0050f0]">4.0★</span>
                     </div>
                   </div>
-                  <div className="text-[11px] font-semibold text-gray-600 mt-0.5">
-                    {t('hero.statReviews')}
+                  <div className="text-[10px] sm:text-[11px] font-semibold text-gray-600 mt-0.5">
+                    {language === 'th' ? '1,600+ รีวิวการันตี' : '1,600+ Verified Reviews'}
                   </div>
                 </div>
               </div>
