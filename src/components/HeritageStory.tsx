@@ -45,7 +45,7 @@ export const HeritageStory: React.FC = () => {
               {/* Heritage stamp */}
               <div className="absolute top-3 left-3 sm:-top-5 sm:-left-5 bg-[#1b4332] text-[#e9c46a] p-3 sm:p-4 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
                 <Award className="w-6 h-6 mb-1 text-[#e9c46a]" />
-                <span className="text-xl font-black leading-none">25+</span>
+                <span className="text-xl font-black leading-none">26+</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-emerald-200 mt-1">
                   {language === 'th' ? 'ปีแห่งความอร่อย' : 'Years'}
                 </span>
@@ -65,10 +65,50 @@ export const HeritageStory: React.FC = () => {
               {t('story.title')}
             </h2>
 
-            <div className="space-y-4 text-base sm:text-lg text-[#55473e] leading-relaxed mb-8">
-              <p>{t('story.p1')}</p>
-              <p>{t('story.p2')}</p>
-              <p className="font-medium text-[#1b4332]">{t('story.p3')}</p>
+            <div className="space-y-3.5 sm:space-y-4 mb-8">
+              {/* Chapter 1: The Meaning */}
+              <div className="bg-white/70 backdrop-blur-xs p-4 sm:p-5 rounded-2xl border border-[#ded8cb] shadow-2xs hover:shadow-xs transition-shadow">
+                <h3 className="text-base sm:text-lg font-bold text-[#1b4332] flex items-center gap-2.5 mb-1.5">
+                  <span className="w-6 h-6 rounded-full bg-[#1b4332] text-[#e9c46a] text-xs font-black flex items-center justify-center shrink-0">1</span>
+                  <span>{t('story.meaningTitle')}</span>
+                </h3>
+                <p className="text-sm sm:text-base leading-relaxed text-[#55473e] pl-8.5">
+                  {t('story.meaningText')}
+                </p>
+              </div>
+
+              {/* Chapter 2: The Saphan Lueang Origins */}
+              <div className="bg-white/70 backdrop-blur-xs p-4 sm:p-5 rounded-2xl border border-[#ded8cb] shadow-2xs hover:shadow-xs transition-shadow">
+                <h3 className="text-base sm:text-lg font-bold text-[#1b4332] flex items-center gap-2.5 mb-1.5">
+                  <span className="w-6 h-6 rounded-full bg-[#1b4332] text-[#e9c46a] text-xs font-black flex items-center justify-center shrink-0">2</span>
+                  <span>{t('story.originsTitle')}</span>
+                </h3>
+                <p className="text-sm sm:text-base leading-relaxed text-[#55473e] pl-8.5">
+                  {t('story.originsText')}
+                </p>
+              </div>
+
+              {/* Chapter 3: The Expansion and Relocation */}
+              <div className="bg-white/70 backdrop-blur-xs p-4 sm:p-5 rounded-2xl border border-[#ded8cb] shadow-2xs hover:shadow-xs transition-shadow">
+                <h3 className="text-base sm:text-lg font-bold text-[#1b4332] flex items-center gap-2.5 mb-1.5">
+                  <span className="w-6 h-6 rounded-full bg-[#1b4332] text-[#e9c46a] text-xs font-black flex items-center justify-center shrink-0">3</span>
+                  <span>{t('story.expansionTitle')}</span>
+                </h3>
+                <p className="text-sm sm:text-base leading-relaxed text-[#55473e] pl-8.5">
+                  {t('story.expansionText')}
+                </p>
+              </div>
+
+              {/* Chapter 4: Preserving the Recipe */}
+              <div className="bg-white/70 backdrop-blur-xs p-4 sm:p-5 rounded-2xl border border-[#ded8cb] shadow-2xs hover:shadow-xs transition-shadow">
+                <h3 className="text-base sm:text-lg font-bold text-[#1b4332] flex items-center gap-2.5 mb-1.5">
+                  <span className="w-6 h-6 rounded-full bg-[#1b4332] text-[#e9c46a] text-xs font-black flex items-center justify-center shrink-0">4</span>
+                  <span>{t('story.preservingTitle')}</span>
+                </h3>
+                <p className="text-sm sm:text-base leading-relaxed text-[#55473e] pl-8.5">
+                  {t('story.preservingText')}
+                </p>
+              </div>
             </div>
 
             {/* 4 Core Pillars Grid */}
