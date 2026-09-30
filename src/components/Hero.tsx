@@ -98,6 +98,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     <span className="text-[#06c755]">4.9★</span>
                     <span className="text-gray-300 font-light">·</span>
                     <span>4.2★</span>
+                    <span className="text-gray-300 font-light">·</span>
+                    <span className="text-[#0050f0]">4.0★</span>
                   </div>
                   <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
                     {t('hero.statReviews')}
@@ -207,6 +209,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               >
                 <div className="flex -space-x-1.5 overflow-hidden shrink-0">
                   <div 
+                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#06c755] text-white shadow-xs font-black text-xs"
+                    title="LINE MAN Reviews (4.9★)"
+                  >
+                    LM
+                  </div>
+                  <div 
                     className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-white shadow-xs"
                     title="Google Reviews"
                   >
@@ -223,23 +231,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                   >
                     W
                   </div>
-                  <div 
-                    className="inline-flex items-center justify-center h-7 w-7 sm:h-8 sm:w-8 rounded-full ring-2 ring-white bg-[#1b4332] text-[#e9c46a] shadow-xs font-bold text-xs"
-                    title="Verified Diners"
-                  >
-                    ★
-                  </div>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    {/* Accurate 4.2 Fractional Star Rating (4 full + 1 at 20%) */}
+                    {/* 4.9 Fractional Star Rating (4 full + 1 at 90%) */}
                     <div className="flex items-center gap-0.5">
                       {[1, 2, 3, 4, 5].map((starIndex) => (
                         <div key={starIndex} className="relative w-3.5 h-3.5 shrink-0">
                           <Star className="w-3.5 h-3.5 text-gray-200 fill-gray-200" />
                           <div 
                             className="absolute inset-0 overflow-hidden" 
-                            style={{ width: starIndex <= 4 ? '100%' : '20%' }}
+                            style={{ width: starIndex <= 4 ? '100%' : '90%' }}
                           >
                             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                           </div>
@@ -247,6 +249,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                       ))}
                     </div>
                     <div className="text-xs font-extrabold text-[#1b4332] leading-none flex items-center gap-0.5">
+                      <span className="text-[#06c755]">4.9★</span>
+                      <span className="text-gray-300 font-normal">·</span>
                       <span>4.2★</span>
                       <span className="text-gray-300 font-normal">·</span>
                       <span className="text-[#0050f0]">4.0★</span>
