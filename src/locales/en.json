@@ -21,8 +21,8 @@
     "subtitle": "Discover the true culinary soul of Vietnam: 12-hour simmered Phở broth, signature charcoal-grilled Nem Nướng with secret roasted liver sauce, and crisp organic herbs delivered fresh daily.",
     "dineInBtn": "Dine-in / Reserve Table",
     "deliveryBtn": "Order Direct Delivery",
-    "statRating": "4.2★ · 4.0★",
-    "statReviews": "Google & Wongnai (400+)",
+    "statRating": "4.9★ · 4.2★",
+    "statReviews": "LINE MAN (1,200+) & Google",
     "statBroth": "12-Hr Slow Simmered",
     "statBrothSub": "Traditional Bone & Herb Broth",
     "statHerbs": "Daily Fresh Herbs",
@@ -59,8 +59,8 @@
     "stat2Label": "Years established in Chula Soi 9",
     "stat3": "100%",
     "stat3Label": "Farm-fresh daily herbs & vegetables",
-    "stat4": "400+",
-    "stat4Label": "Google & Wongnai reviews"
+    "stat4": "1,200+",
+    "stat4Label": "LINE MAN 4.9★ verified reviews"
   },
   "media": {
     "sectionBadge": "AS SEEN ON TV & MEDIA",
@@ -75,12 +75,14 @@
   "reviews": {
     "sectionBadge": "REAL REVIEWS",
     "title": "Loved by Locals, Expats & Foodies",
-    "subtitle": "Highly rated across Google Maps and Wongnai — Thailand's premier restaurant review platform",
+    "subtitle": "Rated 4.9★ on LINE MAN (1,226 ratings) alongside stellar Google Maps verified diner reviews.",
+    "linemanVerified": "LINE MAN (1,200+ Ratings 4.9★)",
     "googleVerified": "Google Maps (350+ Reviews)",
     "wongnaiVerified": "Wongnai (Top Vietnamese Landmark)",
     "viewAllGoogle": "Read All Reviews on Google Maps",
     "viewAllWongnai": "Read Reviews on Wongnai",
     "platformAll": "All Platforms",
+    "platformLineman": "LINE MAN (4.9★)",
     "platformGoogle": "Google Maps (4.2★)",
     "platformWongnai": "Wongnai (4.0★)",
     "filterAll": "All Dishes",

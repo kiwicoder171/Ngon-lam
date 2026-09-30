@@ -21,8 +21,8 @@
     "subtitle": "สัมผัสเสน่ห์อาหารเวียดนามขนานแท้ จากน้ำซุปเฝอเคี่ยวข้ามคืน 12 ชั่วโมง แหนมเนืองน้ำจิ้มตับบดงาคั่วสูตรลับเฉพาะ และผักสมุนไพรสดสะอาดเติมได้ไม่อั้น",
     "dineInBtn": "ทานที่ร้าน / จองโต๊ะ",
     "deliveryBtn": "สั่งเดลิเวอรีส่งถึงบ้าน",
-    "statRating": "4.2★ · 4.0★",
-    "statReviews": "Google & Wongnai (400+)",
+    "statRating": "4.9★ · 4.2★",
+    "statReviews": "LINE MAN (1,200+) & Google",
     "statBroth": "ซุปเคี่ยวข้ามคืน 12 ชม.",
     "statBrothSub": "หอมเครื่องเทศเวียดนามแท้",
     "statHerbs": "ผักสดคัดพิเศษทุกวัน",
@@ -59,8 +59,8 @@
     "stat2Label": "ปีแห่งความผูกพันในจุฬา ซอย 9",
     "stat3": "100%",
     "stat3Label": "ผักสมุนไพรสดส่งตรงจากสวน",
-    "stat4": "400+",
-    "stat4Label": "รีวิวบน Google & Wongnai"
+    "stat4": "1,200+",
+    "stat4Label": "รีวิว LINE MAN เรตติ้ง 4.9★"
   },
   "media": {
     "sectionBadge": "AS SEEN ON TV & MEDIA",
@@ -75,12 +75,14 @@
   "reviews": {
     "sectionBadge": "REAL REVIEWS",
     "title": "ความประทับใจจากลูกค้าตัวจริง",
-    "subtitle": "การันตีความอร่อยจาก Google Maps และ Wongnai แพลตฟอร์มรีวิวอันดับ 1 ของคนไทย",
+    "subtitle": "การันตีความอร่อยระดับ 4.9★ จาก LINE MAN (กว่า 1,226 เรตติ้ง) และ Google Maps รีวิวจริงจากลูกค้า",
+    "linemanVerified": "LINE MAN (1,200+ เรตติ้ง 4.9★)",
     "googleVerified": "Google Maps (350+ รีวิว)",
     "wongnaiVerified": "Wongnai (ร้านอาหารเวียดนามยอดนิยม)",
     "viewAllGoogle": "ดูรีวิวทั้งหมดบน Google Maps",
     "viewAllWongnai": "ดูรีวิวทั้งหมดบน Wongnai",
     "platformAll": "ทุกแพลตฟอร์ม",
+    "platformLineman": "LINE MAN (4.9★)",
     "platformGoogle": "Google Maps (4.2★)",
     "platformWongnai": "Wongnai (4.0★)",
     "filterAll": "ทุกเมนู",

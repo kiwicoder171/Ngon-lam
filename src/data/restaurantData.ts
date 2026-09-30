@@ -22,7 +22,7 @@ export interface Dish {
 
 export interface Review {
   id: string;
-  source: 'google' | 'wongnai';
+  source: 'google' | 'wongnai' | 'lineman';
   author: string;
   authorTypeTh: string;
   authorTypeEn: string;
@@ -345,6 +345,54 @@ export const DISHES: Dish[] = [
 ];
 
 export const REVIEWS: Review[] = [
+  {
+    id: 'rev-lineman-1',
+    source: 'lineman',
+    author: 'คุณกิตติศักดิ์ ม.',
+    authorTypeTh: 'LINE MAN Verified Order (สั่งซ้ำประจำ)',
+    authorTypeEn: 'LINE MAN Verified Buyer (Regular Customer)',
+    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: '3 วันที่แล้ว',
+    dateEn: '3 days ago',
+    category: 'pho',
+    textTh: 'สั่งเฝอเนื้อกับแหนมเนืองผ่าน LINE MAN มาทานที่บ้าน แพ็กเกจจิ้งดีเยี่ยม แยกน้ำซุปถุงร้อนปิดสนิท ผักสดแยกถุงซิปล็อคกรอบสะอาดมาก น้ำซุปยังร้อนควันฉุย รสชาติเข้มข้นกลมกล่อมเหมือนไปนั่งทานที่ร้าน Chula 9 เป๊ะ สมแล้วที่ได้ 4.9 ดาว',
+    textEn: 'Ordered Beef Phở and Nem Nướng on LINE MAN. Outstanding packaging! Broth was securely packed and arrived steaming hot, while fresh vegetables were crisp and spotless in separate bags. Tastes just as incredible as dining in at Chula Soi 9. Deserves every bit of its 4.9-star rating.',
+    dishRecommendedTh: 'เฝอเนื้อพิเศษ & แหนมเนืองชุดใหญ่',
+    dishRecommendedEn: 'Signature Beef Phở & Nem Nướng Platter'
+  },
+  {
+    id: 'rev-lineman-2',
+    source: 'lineman',
+    author: 'Supaporn B.',
+    authorTypeTh: 'LINE MAN Verified Order (ออฟฟิศสามย่าน)',
+    authorTypeEn: 'LINE MAN Verified Buyer (Samyan Office Order)',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: 'สัปดาห์ที่แล้ว',
+    dateEn: '1 week ago',
+    category: 'nem',
+    textTh: 'สั่งมาทานกับเพื่อนร่วมงานมื้อกลางวัน แหนมเนืองจัดชุดมาเรียบร้อยมาก แผ่นแป้งไม่ติดกัน น้ำจิ้มตับบดงาคั่วให้มาเยอะสะใจ หมูย่างเตาถ่านหอมทะลุกล่อง ปริมาณคุ้มค่าราคามาก บริการรวดเร็วสั่งปุ๊บได้ปั๊บ',
+    textEn: 'Ordered for our office lunch. The Nem Nướng set is packed with supreme care — rice paper sheets don’t stick together, and they provide plenty of that addictive roasted liver sauce. The charcoal grilled aroma filled the whole office. Incredible value and speedy delivery.',
+    dishRecommendedTh: 'แหนมเนือง & หมูย่างใบชะพลู',
+    dishRecommendedEn: 'Nem Nướng & Betel Leaf Pork'
+  },
+  {
+    id: 'rev-lineman-3',
+    source: 'lineman',
+    author: 'Pattara T.',
+    authorTypeTh: 'LINE MAN Top Reviewer',
+    authorTypeEn: 'LINE MAN Top Reviewer',
+    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=200&auto=format&fit=crop',
+    rating: 5,
+    dateTh: '2 สัปดาห์ก่อน',
+    dateEn: '2 weeks ago',
+    category: 'vibe',
+    textTh: 'หนึ่งในร้านโปรดบน LINE MAN ทำอาหารถูกต้องตามสั่งและสะอาดถูกสุขอนามัยมาก ข้าวเกรียบปากหม้อยังอุ่นนุ่ม กุ้งพันอ้อยชิ้นใหญ่เนื้อแน่น ทานคู่กับผักสดกรอบๆ รู้สึกสดชื่นเพื่อสุขภาพจริงๆ',
+    textEn: 'One of my favorite go-to spots on LINE MAN. The food is always made exactly as requested, spotless, and hygienic. Steamed rice crepes arrived warm and tender, sugarcane shrimp were massive and juicy. Real healthy comfort food.',
+    dishRecommendedTh: 'ข้าวเกรียบปากหม้อ & กุ้งพันอ้อย',
+    dishRecommendedEn: 'Bánh Cuốn & Sugarcane Shrimp'
+  },
   {
     id: 'rev-1',
     source: 'google',

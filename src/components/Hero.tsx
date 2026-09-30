@@ -70,6 +70,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               >
                 <div className="flex -space-x-1.5 shrink-0 mt-0.5">
                   <div 
+                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg ring-1 ring-black/10 bg-[#06c755] text-white shadow-xs font-black text-xs"
+                    title="LINE MAN Reviews (4.9★)"
+                  >
+                    LM
+                  </div>
+                  <div 
                     className="inline-flex items-center justify-center h-8 w-8 rounded-lg ring-1 ring-black/10 bg-white shadow-xs p-1"
                     title="Google Reviews"
                   >
@@ -89,9 +95,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                 </div>
                 <div>
                   <div className="font-extrabold text-sm text-[#2c221e] leading-tight flex items-center gap-1 group-hover/stat:text-[#1b4332]">
-                    <span>4.2★</span>
+                    <span className="text-[#06c755]">4.9★</span>
                     <span className="text-gray-300 font-light">·</span>
-                    <span className="text-[#0050f0]">4.0★</span>
+                    <span>4.2★</span>
                   </div>
                   <div className="text-xs text-[#7f6f64] leading-tight mt-0.5">
                     {t('hero.statReviews')}

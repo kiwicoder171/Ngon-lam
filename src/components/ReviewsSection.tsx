@@ -5,7 +5,7 @@ import { Star, MessageSquareQuote, ExternalLink, CheckCircle, Award } from 'luci
 
 export const ReviewsSection: React.FC = () => {
   const { language, t } = useLanguage();
-  const [platform, setPlatform] = useState<'all' | 'google' | 'wongnai'>('all');
+  const [platform, setPlatform] = useState<'all' | 'lineman' | 'google' | 'wongnai'>('all');
   const [category, setCategory] = useState<'all' | 'pho' | 'nem' | 'vibe'>('all');
 
   const filteredReviews = REVIEWS.filter((rev) => {
@@ -18,8 +18,8 @@ export const ReviewsSection: React.FC = () => {
     <section id="reviews" className="py-16 md:py-24 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header with Dual Platform Proof Cards */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        {/* Header with Triple Platform Proof Cards */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
           <div>
             <div className="inline-flex items-center gap-2 bg-[#2d6a4f]/10 text-[#1b4332] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
               <Star className="w-3.5 h-3.5 fill-[#e9c46a] text-[#e9c46a]" />
@@ -33,8 +33,32 @@ export const ReviewsSection: React.FC = () => {
             </p>
           </div>
 
-          {/* Dual Score Cards: Google Maps & Wongnai */}
+          {/* Triple Score Cards: LINE MAN, Google Maps & Wongnai */}
           <div className="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
+            {/* LINE MAN Score Card */}
+            <div className="flex-1 sm:flex-initial bg-white p-4 rounded-2xl border-2 border-[#06c755]/30 shadow-sm flex items-center gap-3.5">
+              <div className="w-11 h-11 rounded-xl bg-[#06c755]/10 flex items-center justify-center text-[#06c755] font-black text-xl">
+                4.9
+              </div>
+              <div>
+                <div className="flex items-center gap-1 mb-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <a
+                  href="https://lin.ee/FcVemHp?openExternalBrowser=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-bold text-[#06c755] hover:underline flex items-center gap-1"
+                >
+                  <span>LINE MAN</span>
+                  <ExternalLink className="w-3 h-3 text-[#06c755]" />
+                </a>
+                <p className="text-[10px] text-gray-500">1,226 {language === 'th' ? 'เรตติ้ง (4.9 ดาว)' : 'ratings (4.9★)'}</p>
+              </div>
+            </div>
+
             {/* Google Maps Score Card */}
             <div className="flex-1 sm:flex-initial bg-white p-4 rounded-2xl border border-[#ded8cb] shadow-sm flex items-center gap-3.5">
               <div className="w-11 h-11 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 font-black text-xl">
@@ -77,7 +101,7 @@ export const ReviewsSection: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-[#0050f0] hover:underline flex items-center gap-1"
                 >
-                  <span>Wongnai (วงใน)</span>
+                  <span>Wongnai</span>
                   <ExternalLink className="w-3 h-3 text-[#0050f0]" />
                 </a>
                 <p className="text-[10px] text-gray-500">{language === 'th' ? 'ร้านดังจุฬาฯ' : 'Chula Landmark'}</p>
@@ -86,11 +110,37 @@ export const ReviewsSection: React.FC = () => {
           </div>
         </div>
 
+        {/* Customer Voice Highlights from LINE MAN & Google */}
+        <div className="flex flex-wrap items-center gap-2 mb-8 p-3.5 rounded-2xl bg-[#f0ece1]/80 border border-[#ded8cb]">
+          <span className="text-xs font-bold text-[#1b4332] flex items-center gap-1.5 mr-1">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#06c755]"></span>
+            <span>{language === 'th' ? 'การันตีจริงจากลูกค้าบน LINE MAN:' : 'Verified LINE MAN Diner Feedback:'}</span>
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'อร่อย 423' : 'Delicious 423'}
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'ทำถูกต้องตามสั่ง 403' : 'Correctly made 403'}
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'คุณภาพดี 397' : 'Nice quality 397'}
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'บรรจุภัณฑ์ดีเยี่ยม 379' : 'Properly packaged 379'}
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'สะอาดถูกสุขอนามัย 374' : 'Hygienic 374'}
+          </span>
+          <span className="text-[11px] font-semibold bg-white text-[#1b4332] px-2.5 py-1 rounded-lg border border-[#ded8cb] shadow-2xs">
+            {language === 'th' ? 'คุ้มค่าคุ้มราคา 273' : 'Great value 273'}
+          </span>
+        </div>
+
         {/* Filter Toolbar: Platform Toggle & Food Category Filter */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-[#ded8cb]">
           
           {/* Platform Filter Tabs */}
-          <div className="flex items-center gap-1 bg-[#f0ece1] p-1 rounded-xl w-fit">
+          <div className="flex flex-wrap items-center gap-1 bg-[#f0ece1] p-1 rounded-xl w-fit">
             <button
               onClick={() => setPlatform('all')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
@@ -100,6 +150,17 @@ export const ReviewsSection: React.FC = () => {
               }`}
             >
               {t('reviews.platformAll')}
+            </button>
+            <button
+              onClick={() => setPlatform('lineman')}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                platform === 'lineman'
+                  ? 'bg-white text-[#06c755] shadow-xs'
+                  : 'text-[#6c584c] hover:text-[#06c755]'
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-[#06c755]"></span>
+              <span>{t('reviews.platformLineman')}</span>
             </button>
             <button
               onClick={() => setPlatform('google')}
@@ -182,7 +243,14 @@ export const ReviewsSection: React.FC = () => {
                 {/* Author Info & Platform Badge */}
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <div className="flex items-center gap-3">
-                    {rev.source === 'google' ? (
+                    {rev.source === 'lineman' ? (
+                      <div 
+                        className="w-11 h-11 rounded-full bg-[#06c755] text-white shadow-xs flex items-center justify-center shrink-0 font-black text-sm"
+                        title="LINE MAN Verified Reviewer"
+                      >
+                        LM
+                      </div>
+                    ) : rev.source === 'google' ? (
                       <div 
                         className="w-11 h-11 rounded-full bg-white border border-[#e8e2d8] shadow-xs flex items-center justify-center shrink-0"
                         title="Google Maps Reviewer"
@@ -216,12 +284,16 @@ export const ReviewsSection: React.FC = () => {
                   </div>
 
                   {/* Platform Indicator Tag */}
-                  {rev.source === 'wongnai' ? (
-                    <span className="px-2 py-0.5 rounded-md bg-[#0050f0]/10 text-[#0050f0] text-[10px] font-black tracking-wide uppercase">
+                  {rev.source === 'lineman' ? (
+                    <span className="px-2.5 py-0.5 rounded-md bg-[#06c755]/15 text-[#06c755] text-[10px] font-black tracking-wide uppercase">
+                      LINE MAN
+                    </span>
+                  ) : rev.source === 'wongnai' ? (
+                    <span className="px-2.5 py-0.5 rounded-md bg-[#0050f0]/10 text-[#0050f0] text-[10px] font-black tracking-wide uppercase">
                       Wongnai
                     </span>
                   ) : (
-                    <span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-800 text-[10px] font-black tracking-wide uppercase">
+                    <span className="px-2.5 py-0.5 rounded-md bg-amber-500/10 text-amber-800 text-[10px] font-black tracking-wide uppercase">
                       Google
                     </span>
                   )}
@@ -260,8 +332,19 @@ export const ReviewsSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Dual External Profile Verification Links */}
+        {/* Triple External Profile Verification Links */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10">
+          <a
+            href="https://lin.ee/FcVemHp?openExternalBrowser=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-50/50 text-[#06c755] font-bold text-xs sm:text-sm border border-[#06c755]/30 shadow-sm hover:shadow-md transition-all"
+          >
+            <div className="w-4 h-4 rounded-full bg-[#06c755] text-white flex items-center justify-center font-black text-[9px]">LM</div>
+            <span>{language === 'th' ? 'ดูรีวิวบน LINE MAN (4.9★)' : 'Reviews on LINE MAN (4.9★)'}</span>
+            <ExternalLink className="w-3.5 h-3.5 opacity-60" />
+          </a>
+
           <a
             href="https://maps.google.com/?cid=604739504812316184"
             target="_blank"
