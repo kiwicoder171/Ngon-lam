@@ -55,7 +55,7 @@ export const ReviewsSection: React.FC = () => {
                   <span>LINE MAN</span>
                   <ExternalLink className="w-3 h-3 text-[#06c755]" />
                 </a>
-                <p className="text-[10px] text-gray-500">1,226 {language === 'th' ? 'เรตติ้ง (4.9 ดาว)' : 'ratings (4.9★)'}</p>
+                <p className="text-[10px] text-gray-500">1,226 {language === 'th' ? 'เรตติ้ง' : 'ratings'}</p>
               </div>
             </div>
 
