@@ -1,0 +1,21 @@
+{
+  "name": "หง่อนหลำ (Ngon Lam) อาหารเวียดนามแท้ จุฬา ซอย 9",
+  "short_name": "หง่อนหลำ",
+  "description": "ร้านอาหารเวียดนามแท้ จุฬา ซอย 9 สืบทอดความอร่อยกว่า 25 ปี ทานที่ร้านและเดลิเวอรี LINE MAN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#1b4332",
+  "icons": [
+    {
+      "src": "/images/logo/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
