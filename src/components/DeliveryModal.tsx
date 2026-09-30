@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { X, ExternalLink, ShieldCheck, Bike } from 'lucide-react';
+import { X, ExternalLink, ShieldCheck, Bike, MessageCircle, Phone } from 'lucide-react';
 
 interface DeliveryModalProps {
   isOpen: boolean;
@@ -66,7 +66,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
           <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#06c755] transition-colors">
             <div className="flex items-start justify-between gap-4 mb-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-[#06c755]/10 text-[#06c755] flex items-center justify-center font-black text-lg">
+                <div className="w-12 h-12 rounded-2xl bg-[#06c755]/10 text-[#06c755] flex items-center justify-center font-black text-lg shrink-0">
                   LM
                 </div>
                 <div>
@@ -79,8 +79,8 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
                 </div>
               </div>
 
-              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#06c755]/10 text-[#06c755]">
-                ครอบคลุมกทม.
+              <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-[#06c755]/15 text-[#06c755] shrink-0">
+                Official
               </span>
             </div>
 
@@ -88,44 +88,50 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
               href="https://lin.ee/FcVemHp?openExternalBrowser=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#06c755] hover:bg-[#05b34c] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
+              className="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#06c755] hover:bg-[#05b34c] text-white text-sm font-bold transition-all shadow-md cursor-pointer active:scale-98"
             >
               <span>{t('modalDelivery.lineManBtn')}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
 
-          {/* Robinhood Option */}
-          <div className="p-5 rounded-2xl bg-white border border-[#ded8cb] shadow-sm hover:border-[#581c87] transition-colors">
-            <div className="flex items-start justify-between gap-4 mb-3">
+          {/* Option: Direct Order / Pre-order with store */}
+          <div className="p-4 rounded-2xl bg-white border border-[#ded8cb] shadow-2xs">
+            <div className="flex items-start justify-between gap-3 mb-2.5">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-[#581c87]/10 text-[#581c87] flex items-center justify-center font-black text-lg">
-                  RH
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-[#1b4332] flex items-center justify-center shrink-0">
+                  <MessageCircle className="w-5 h-5 text-[#2d6a4f]" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1b4332] text-base">
-                    {t('modalDelivery.robinhoodTitle')}
+                  <h4 className="font-bold text-[#1b4332] text-sm">
+                    {t('modalDelivery.lineOrderDirectTitle')}
                   </h4>
                   <p className="text-xs text-[#8d7b68]">
-                    {t('modalDelivery.robinhoodDesc')}
+                    {t('modalDelivery.lineOrderDirectDesc')}
                   </p>
                 </div>
               </div>
-
-              <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#581c87]/10 text-[#581c87]">
-                ค่าส่งเป็นมิตร
-              </span>
             </div>
 
-            <a
-              href="https://d.robinhood.co.th/s/GHsPi55?lang=TH"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#581c87] hover:bg-[#4a154b] text-white text-sm font-bold transition-all shadow-md cursor-pointer"
-            >
-              <span>{t('modalDelivery.robinhoodBtn')}</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+              <a
+                href="https://line.me/R/ti/p/@ngonlam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-[#06c755] hover:bg-[#05b34c] text-white text-xs font-bold transition-all"
+              >
+                <MessageCircle className="w-3.5 h-3.5 fill-white" />
+                <span>LINE OA (@ngonlam)</span>
+              </a>
+
+              <a
+                href="tel:0894827272"
+                className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-[#1b4332] hover:bg-[#081c15] text-white text-xs font-bold transition-all"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#e9c46a]" />
+                <span>089-482-7272</span>
+              </a>
+            </div>
           </div>
 
           {/* Freshness & Packaging Reassurance */}

@@ -461,7 +461,6 @@ export const REVIEWS: Review[] = [
 
 export const DELIVERY_LINKS = {
   lineMan: 'https://lin.ee/FcVemHp?openExternalBrowser=1',
-  robinhood: 'https://d.robinhood.co.th/s/GHsPi55?lang=TH',
   wongnai: 'https://www.wongnai.com/r/278219zl',
   googleMaps: 'https://maps.google.com/?cid=604739504812316184',
 };

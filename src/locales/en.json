@@ -105,7 +105,7 @@
     "callNow": "Call Restaurant",
     "transitMRT": "MRT Samyan Exit 2 (approx. 450 meters walk)",
     "transitParking": "Parking available at Suanluang Square and Chulalongkorn Car Park",
-    "deliveryDirect": "Delivery available daily on LINE MAN and Robinhood during store hours"
+    "deliveryDirect": "Delivery available daily on LINE MAN during store hours"
   },
   "modalReservation": {
     "title": "Reserve Table & Inquiries",
@@ -126,12 +126,11 @@
   "modalDelivery": {
     "title": "Order Fresh Delivery to Your Door",
     "subtitle": "Enjoy piping hot, authentic Vietnamese meals safely delivered to your doorstep.",
-    "robinhoodTitle": "Robinhood",
-    "robinhoodDesc": "Thailand's beloved local delivery app with fair prices and direct delivery.",
-    "robinhoodBtn": "Order on Robinhood",
     "lineManTitle": "LINE MAN",
     "lineManDesc": "Comprehensive Bangkok delivery coverage with full restaurant menu.",
     "lineManBtn": "Order on LINE MAN",
+    "lineOrderDirectTitle": "Direct Order / Pre-Order with Restaurant",
+    "lineOrderDirectDesc": "Order via LINE OA or telephone for direct takeout or special catering.",
     "packagingNote": "🍲 Every delivery order is packed with sealed soup pouches and crisp separated vegetables to ensure maximum freshness and heat.",
     "close": "Close"
   },
