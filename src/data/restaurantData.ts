@@ -322,25 +322,6 @@ export const DISHES: Dish[] = [
     chefNoteTh: 'บีบมะนาวสดและคลุกเคล้าพริกขี้หนูซอยก่อนทาน รสเปรี้ยวเผ็ดจะช่วยชูรสชาติเค็มมันของหนำเลี๊ยบให้โดดเด่นขึ้น',
     chefNoteEn: 'Squeeze lime and mix fresh chilies throughout before enjoying for optimal savory-tangy balance.',
     spiciness: 1,
-  },
-  {
-    id: 'ca-phe-viet',
-    category: 'drinks',
-    nameTh: 'กาแฟดริปเวียดนามแท้ (Cà Phê Sữa Đá)',
-    nameEn: 'Traditional Vietnamese Drip Coffee',
-    nameVi: 'Cà Phê Sữa Đá',
-    badgeTh: '☕ เมล็ดดาลัดคั่วเข้ม',
-    badgeEn: '☕ Dalat Robusta Roast',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=900&auto=format&fit=crop',
-    shortDescTh: 'กาแฟโรบัสต้าคั่วเข้มจากที่ราบสูงดาลัด ดริปผ่านฟิลเตอร์โลหะ Phin แบบดั้งเดิม ผสานนมข้นหวานเข้มข้น หอมมันกลมกล่อม',
-    shortDescEn: 'Bold slow-dripped Vietnamese Robusta coffee brewed via traditional stainless Phin filter, blended with sweet condensed milk.',
-    detailedDescTh: 'สัมผัสประสบการณ์กาแฟเวียดนามแท้ๆ เมล็ดกาแฟส่งตรงจากเมืองดาลัด คั่วเข้มสไตล์ฝรั่งเศส ให้โน้ตช็อกโกแลตเข้มข้น ดริปหยดต่อหยดผ่านถ้วยดริปฟินสแตนเลส ผสมกับนมข้นหวานอย่างลงตัว ให้รสชาติเข้มข้น หอมกรุ่น ดื่มแล้วสดชื่นตลอดวัน',
-    detailedDescEn: 'Authentic slow drip experience using premium dark roast beans sourced directly from the Dalat highlands. Thick, chocolatey, and delightfully potent, stirred over sweet condensed milk and poured over crushed ice.',
-    ingredientsTh: ['เมล็ดกาแฟโรบัสต้าดาลัดแท้', 'นมข้นหวานคุณภาพดี', 'น้ำแข็งหลอดสะอาด'],
-    ingredientsEn: ['Authentic Dalat Robusta beans', 'Sweetened condensed milk', 'Crushed ice'],
-    chefNoteTh: 'สำหรับแบบเย็น ทิ้งให้ดริปจนหมดแก้วแล้วคนนมข้นให้ละลายเข้ากันก่อนเทลงแก้วน้ำแข็ง',
-    chefNoteEn: 'Allow the phin filter to drip completely, then vigorously stir the coffee into the condensed milk before pouring over ice.',
-    spiciness: 0,
   }
 ];
 

@@ -14,7 +14,7 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
   onOpenReservation,
 }) => {
   const { language, t } = useLanguage();
-  const [activeFilter, setActiveFilter] = useState<'all' | 'soup' | 'rolls' | 'mains' | 'drinks'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'soup' | 'rolls' | 'mains'>('all');
   const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
 
   const filteredDishes = activeFilter === 'all'
@@ -79,16 +79,6 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
               }`}
             >
               {t('menu.filterMains')}
-            </button>
-            <button
-              onClick={() => setActiveFilter('drinks')}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
-                activeFilter === 'drinks'
-                  ? 'bg-[#1b4332] text-white shadow-md'
-                  : 'bg-white text-[#403d39] border border-[#ded8cb] hover:border-[#1b4332]'
-              }`}
-            >
-              {t('menu.filterDrinks')}
             </button>
           </div>
         </div>
