@@ -158,7 +158,7 @@ export const SignatureMenu: React.FC<SignatureMenuProps> = ({
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold">
-                {language === 'th' ? 'ผักสมุนไพรสดและน้ำซุปเติมฟรีไม่อั้นเมื่อทานที่ร้าน' : 'Free Unlimited Fresh Herbs & Broth Refill Dine-In'}
+                {language === 'th' ? 'ผักสมุนไพรสดสะอาดทุกวัน และน้ำซุปกลมกล่อมสูตรต้นตำรับ' : 'Fresh Clean Herbs Daily & Authentic Spiced Broth'}
               </h3>
               <p className="text-sm text-emerald-100/90 mt-1">
                 {language === 'th' ? 'พร้อมเครื่องเคียง ผักชีฝรั่ง โหระพา พริกมะนาวสด ปรุงรสตามใจชอบ' : 'Complete with culantro, Thai basil, fresh chilies and limes.'}

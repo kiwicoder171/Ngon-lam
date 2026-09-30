@@ -122,10 +122,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                   </div>
                   <div className="min-w-0">
                     <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight truncate">
-                      {language === 'th' ? '12 ชม.' : '12 Hours'}
+                      {language === 'th' ? 'ซุปกลมกล่อม' : 'Rich Broth'}
                     </div>
                     <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
-                      {language === 'th' ? 'ซุปเคี่ยวข้ามคืน' : 'Simmered Broth'}
+                      {language === 'th' ? 'หอมเครื่องเทศแท้' : 'Authentic Spices'}
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                       {language === 'th' ? '100% สด' : '100% Fresh'}
                     </div>
                     <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
-                      {language === 'th' ? 'ผักสดคัดสวน' : 'Organic Herbs'}
+                      {language === 'th' ? 'ผักสดสะอาดทุกวัน' : 'Clean & Fresh Daily'}
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     {language === 'th' ? 'เฝอเนื้อพิเศษ & แหนมเนือง' : 'Beef Phở & Nem Nướng'}
                   </h3>
                   <p className="text-[10px] sm:text-[11px] text-white/90 drop-shadow-sm mt-0.5">
-                    {language === 'th' ? 'ซุปเคี่ยว 12 ชม. ผักสดไม่อั้น' : '12-hr simmered broth'}
+                    {language === 'th' ? 'น้ำซุปกลมกล่อม ผักสดสะอาดทุกวัน' : 'Naturally spiced broth & fresh herbs daily'}
                   </p>
                 </div>
               </div>
