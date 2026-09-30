@@ -153,7 +153,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                       {language === 'th' ? 'กว่า 25 ปี' : '25+ Years'}
                     </div>
                     <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
-                      {language === 'th' ? 'คู่สามย่าน' : 'Chula Legacy'}
+                      {language === 'th' ? 'ตำนานความอร่อย' : 'Culinary Heritage'}
                     </div>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                     {language === 'th' ? 'สูตรแท้ฮานอย' : 'Heritage Hanoi'}
                   </div>
                   <div className="text-[10px] text-gray-500">
-                    {language === 'th' ? 'กว่า 25 ปีในสามย่าน' : '25+ years in Samyan'}
+                    {language === 'th' ? 'เปิดบริการกว่า 25 ปี' : 'Serving for 25+ years'}
                   </div>
                 </div>
               </div>
