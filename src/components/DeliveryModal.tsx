@@ -81,7 +81,7 @@ export const DeliveryModal: React.FC<DeliveryModalProps> = ({ isOpen, onClose })
 
               <span className="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-[#06c755]/15 text-[#06c755] shrink-0 flex items-center gap-1">
                 <Star className="w-3.5 h-3.5 fill-[#06c755] text-[#06c755]" />
-                <span>4.9 (1,226)</span>
+                <span>4.9 (1,200+)</span>
               </span>
             </div>
 
