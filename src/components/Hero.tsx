@@ -150,7 +150,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
                   </div>
                   <div className="min-w-0">
                     <div className="font-extrabold text-xs sm:text-sm text-[#2c221e] leading-tight truncate">
-                      {language === 'th' ? 'กว่า 25 ปี' : '25+ Years'}
+                      {language === 'th' ? 'กว่า 26 ปี' : '26+ Years'}
                     </div>
                     <div className="text-[10px] sm:text-xs text-[#7f6f64] leading-tight mt-0.5 truncate">
                       {language === 'th' ? 'ตำนานความอร่อย' : 'Culinary Heritage'}
@@ -197,14 +197,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenReservation, onOpenDelivery })
               {/* Floating Social Proof Card 1: Top Right on desktop */}
               <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-2.5 z-10">
                 <div className="w-8 h-8 rounded-full bg-[#1b4332] text-[#e9c46a] flex items-center justify-center font-black text-xs shadow-sm shrink-0">
-                  25+
+                  26+
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#1b4332]">
                     {language === 'th' ? 'สูตรแท้ฮานอย' : 'Heritage Hanoi'}
                   </div>
                   <div className="text-[10px] text-gray-500">
-                    {language === 'th' ? 'เปิดบริการกว่า 25 ปี' : 'Serving for 25+ years'}
+                    {language === 'th' ? 'เปิดบริการกว่า 26 ปี' : 'Serving for 26+ years'}
                   </div>
                 </div>
               </div>

@@ -2,8 +2,8 @@
   "brand": {
     "name": "Ngon Lam",
     "subname": "Authentic Vietnamese Restaurant",
-    "est": "Over 25 Years of Heritage",
-    "shortEst": "Est. 25+ Years",
+    "est": "Over 26 Years of Heritage",
+    "shortEst": "Est. 26+ Years",
     "location": "Chula Soi 9 (Samyan, Bangkok)"
   },
   "nav": {
@@ -16,8 +16,8 @@
     "deliveryCta": "Order Delivery"
   },
   "hero": {
-    "badge": "🌿 Authentic Vietnamese Heritage Perfected Over 25 Years • Chula 9",
-    "title": "Authentic Vietnamese Flavors in Chula 9 — Perfected Over 25 Years",
+    "badge": "🌿 Authentic Vietnamese Heritage Perfected Over 26 Years • Chula 9",
+    "title": "Authentic Vietnamese Flavors in Chula 9 — Perfected Over 26 Years",
     "subtitle": "Discover the true culinary soul of Vietnam: rich naturally spiced Phở broth, signature charcoal-grilled Nem Nướng with secret roasted liver sauce, and fresh clean herbs delivered daily.",
     "dineInBtn": "Dine-in / Reserve Table",
     "deliveryBtn": "Order Direct Delivery",
@@ -27,7 +27,7 @@
     "statBrothSub": "Authentic Spices",
     "statHerbs": "Daily Fresh Herbs",
     "statHerbsSub": "Clean & Crisp Daily",
-    "statHeritage": "Over 25 Years",
+    "statHeritage": "Over 26 Years",
     "statHeritageSub": "Enduring Family Recipes"
   },
   "menu": {
@@ -147,7 +147,7 @@
   },
   "footer": {
     "rights": "All rights reserved © 2026 Ngon Lam Vietnamese Restaurant, Chula Soi 9.",
-    "tagline": "Over 25 years of honest Vietnamese comfort food, clean ingredients, and heartwarming hospitality.",
+    "tagline": "Over 26 years of honest Vietnamese comfort food, clean ingredients, and heartwarming hospitality.",
     "designedFor": "Portfolio Project for High-Converting Restaurant Web Development"
   }
 }
