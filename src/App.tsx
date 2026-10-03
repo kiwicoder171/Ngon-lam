@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -80,6 +81,7 @@ export const App: React.FC = () => {
   return (
     <LanguageProvider>
       <MainContent />
+      <Analytics />
     </LanguageProvider>
   );
 };
